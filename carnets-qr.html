@@ -36,16 +36,16 @@
     color:#1a1a1a;font-family:var(--sans);-webkit-font-smoothing:antialiased;
   }
   .wrap{max-width:1500px;margin:0 auto;padding:28px 20px 64px;}
- 
+
   header{margin-bottom:28px;padding-top:6px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:2px;}
   h1{
     font-size:23px;letter-spacing:.01em;margin:0 0 4px;color:var(--navy-deep);
     text-transform:uppercase;font-weight:800;
   }
   header p{margin:0;font-family:var(--mono);font-size:11.5px;color:var(--muted);}
- 
+
   .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;align-items:center;}
- 
+
   /* Panel de alta rápida de carnets */
   .quickadd-panel{
     border:1px solid var(--line-soft);background:#fff;margin-bottom:20px;
@@ -93,7 +93,7 @@
     border-radius:8px;box-shadow:var(--shadow-sm);
   }
   .quickadd-btn:hover{background:var(--green-deep) !important;transform:translateY(-1px);}
- 
+
   /* Barra de agrupación por estado del carnet */
   .group-bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px;}
   .group-label{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;}
@@ -135,7 +135,7 @@
   .btn.secondary:hover{background:var(--navy-deep);color:#fff;}
   .btn.accent{background:var(--green);border-color:var(--green);}
   .btn.accent:hover{background:var(--green-deep);border-color:var(--green-deep);}
- 
+
   /* Modal personalizado para agregar nuevas opciones (no depende de prompt() nativo) */
   .modal-overlay{
     display:none;position:fixed;inset:0;background:rgba(15,28,50,.55);backdrop-filter:blur(2px);
@@ -156,7 +156,7 @@
   }
   .modal-input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(201,98,42,.15);}
   .modal-actions{display:flex;justify-content:flex-end;gap:10px;}
- 
+
   /* Menú contextual (clic derecho) para editar/eliminar la opción seleccionada */
   .ctx-menu{
     display:none;position:fixed;z-index:110;background:#fff;border:1px solid var(--line-soft);
@@ -180,11 +180,11 @@
   }
   #searchIdCarnet::placeholder{color:#5a7196;}
   #searchIdCarnet:focus{outline:none;border-color:var(--accent);background:#fff;}
- 
+
   .table-scroll{overflow-x:auto;overflow-y:visible;border:1px solid var(--line-soft);background:#fff;
     border-radius:var(--radius-md);box-shadow:var(--shadow-md);}
   table{border-collapse:collapse;width:100%;min-width:2720px;font-size:12px;}
- 
+
   /* Barra de desplazamiento horizontal fija: siempre visible y alineada con la tabla,
      sin importar cuánto se haya bajado en la página */
   .sticky-hscroll{
@@ -216,10 +216,10 @@
   #bodyRows.fade-in{animation:fadeInRows .15s ease-out;}
   @keyframes fadeInRows{from{opacity:.35;}to{opacity:1;}}
   tbody tr{border-bottom:1px solid var(--line-soft);transition:background .1s;}
- 
+
   /* divisiones verticales entre bloques de columnas importantes */
   .div-left{border-left:3px solid var(--divider) !important;}
- 
+
   td.col-id{width:70px;text-align:center;color:var(--navy-deep);}
   td.col-id textarea{font-weight:700;}
   td.col-nombre{width:210px;}
@@ -247,7 +247,7 @@
     box-shadow:0 2px 5px rgba(226,86,79,.4);transition:transform .12s, background .12s;
   }
   .row-del:hover{background:#b8221c;transform:scale(1.14);}
- 
+
   /* Combo personalizado: como un <select> pero el texto se ajusta (wrap) dentro de la casilla */
   .combo-cell{position:relative;width:100%;height:100%;}
   .quickadd-table .qa-combo{border:none;background:transparent;min-height:34px;}
@@ -311,7 +311,7 @@
     position:sticky;bottom:0;background:#fff;z-index:2;
   }
   .combo-option.add-new:hover{background:var(--navy-soft);}
- 
+
   /* Autocompletado: escribir para filtrar, flechas para navegar, Enter para elegir */
   .ac-cell{position:relative;width:100%;height:100%;}
   .ac-input{
@@ -358,7 +358,7 @@
   }
   .ac-option.add-new:hover{background:var(--navy-soft);}
   .ac-empty{padding:12px;text-align:center;color:#999;font-family:var(--serif);font-size:11pt;font-style:italic;}
- 
+
   /* Carnet Creado: color de fondo según el estado */
   .estado-entregado{background:var(--green) !important;color:#ffffff !important;font-weight:700;}
   .estado-creada{background:#f0954a !important;color:#ffffff !important;font-weight:700;}
@@ -366,18 +366,18 @@
   select.estado-entregado option, select.estado-creada option, select.estado-falta option{
     color:#1a1a1a;background:#fff;font-weight:400;
   }
- 
+
   /* Tipo de Inscripción y Modalidad: color de fondo según la opción elegida */
   .ac-tipo-curso{background:#1f3864 !important;color:#ffffff !important;font-weight:700;}
   .ac-tipo-taller{background:#8a3fc9 !important;color:#ffffff !important;font-weight:700;}
   .ac-modalidad-presencial{background:var(--green) !important;color:#ffffff !important;font-weight:700;}
   .ac-modalidad-virtual{background:#12959f !important;color:#ffffff !important;font-weight:700;}
- 
+
   /* Situación: siempre texto negro, sin color de estado */
   .situ-plain{color:#1a1a1a;font-weight:600;background:transparent;}
- 
+
   .status{margin-top:12px;font-family:var(--mono);font-size:11px;color:var(--muted);display:flex;gap:18px;flex-wrap:wrap;}
- 
+
   .pagination-bar{
     display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;
     margin-top:14px;padding:10px 14px;background:#fff;border:1px solid var(--line-soft);
@@ -401,7 +401,7 @@
   .page-btn:disabled{opacity:.35;cursor:not-allowed;}
   .page-indicator{font-family:var(--mono);font-size:11.5px;color:var(--navy-deep);font-weight:700;padding:0 4px;white-space:nowrap;}
   .status b{color:var(--navy-deep);}
- 
+
   .toast{
     position:fixed;bottom:24px;right:24px;background:var(--navy-deep);color:#fff;
     font-family:var(--mono);font-size:12px;padding:12px 18px;border-left:4px solid var(--accent);
@@ -409,7 +409,7 @@
     transition:transform .2s,opacity .2s;pointer-events:none;z-index:50;
   }
   .toast.show{transform:translateY(0);opacity:1;}
- 
+
   /* Tarjeta que agrupa la barra de herramientas y de agrupación */
   .controls-card{
     background:#fff;border:1px solid var(--line-soft);border-radius:var(--radius-md);
@@ -417,7 +417,7 @@
   }
   .controls-card .toolbar{margin-bottom:12px;}
   .controls-card .group-bar{margin-bottom:0;}
- 
+
   /* Encabezado de sección, coherente con el del panel de alta rápida */
   .section-title{
     display:flex;align-items:center;gap:8px;margin:0 0 10px 2px;
@@ -425,7 +425,7 @@
     color:var(--navy-deep);font-weight:700;
   }
   .section-title .dot{width:8px;height:8px;border-radius:50%;background:var(--navy);flex:none;}
- 
+
   /* ---------- Responsive: pantallas pequeñas ---------- */
   @media (max-width: 720px){
     .wrap{padding:16px 12px 48px;}
@@ -442,11 +442,11 @@
 </head>
 <body>
 <div class="wrap">
- 
+
   <header>
     <h1>Lista de Carnets con QR</h1>
   </header>
- 
+
   <div class="quickadd-panel">
     <div class="quickadd-title"><i class="bi bi-person-vcard" aria-hidden="true"></i> Agregar nuevo carnet</div>
     <div class="quickadd-scroll">
@@ -502,7 +502,7 @@
       </table>
     </div>
   </div>
- 
+
   <div class="controls-card">
     <div class="toolbar">
       <button class="btn secondary" id="uploadBtn">⇪ Subir mi propio Excel</button>
@@ -512,7 +512,7 @@
       <input type="text" class="search-box" id="searchBox" placeholder="Buscar por nombre, DNI o curso...">
       <input type="text" class="search-box" id="searchIdCarnet" placeholder="Buscar por ID Carnet...">
     </div>
- 
+
     <div class="group-bar">
       <span class="group-label">Agrupar por carnet:</span>
       <button class="group-chip chip-falta" id="groupFalta">🔴 Falta Crear</button>
@@ -521,7 +521,7 @@
       <button class="group-chip chip-clear" id="groupClear">Ver todos</button>
       <span class="autosave-indicator" id="autosaveIndicator">● Guardado automáticamente</span>
     </div>
- 
+
     <div class="group-bar">
       <span class="group-label">Filtrar por inscripción:</span>
       <button class="group-chip chip-tipo-curso" id="tipoFilterCurso">Curso</button>
@@ -531,13 +531,13 @@
       <button class="group-chip chip-clear" id="tipoFilterClear">Ver todos</button>
     </div>
   </div>
- 
+
   <datalist id="dl-curso"></datalist>
   <datalist id="dl-dia"></datalist>
   <datalist id="dl-horario"></datalist>
   <datalist id="dl-situacion"></datalist>
   <datalist id="dl-estado"></datalist>
- 
+
   <p class="section-title"><span class="dot"></span>Lista de carnets</p>
   <div class="table-scroll" id="tableScroll">
     <table id="dataTable">
@@ -565,9 +565,9 @@
       <tbody id="bodyRows"></tbody>
     </table>
   </div>
- 
+
   <div class="sticky-hscroll" id="stickyHscroll"><div id="stickyHscrollInner"></div></div>
- 
+
   <div class="pagination-bar">
     <div class="pagination-info" id="paginationInfo">Mostrando 0-0 de 0 registros</div>
     <div class="pagination-controls">
@@ -587,14 +587,14 @@
       <button class="page-btn" id="pageLastBtn" title="Última página">»</button>
     </div>
   </div>
- 
+
   <div class="status">
     <span><b id="rowCount">0</b> registros mostrados de <b id="totalCount">0</b></span>
   </div>
 </div>
- 
+
 <div class="toast" id="toast"></div>
- 
+
 <div class="modal-overlay" id="addOptionOverlay">
   <div class="modal-box">
     <div class="modal-title" id="addOptionTitle">Agregar nueva opción</div>
@@ -605,16 +605,16 @@
     </div>
   </div>
 </div>
- 
+
 <div class="ctx-menu" id="ctxMenu">
   <div class="ctx-item" id="ctxEdit">✎ Editar esta opción</div>
   <div class="ctx-item ctx-danger" id="ctxDelete">✕ Eliminar de la lista</div>
 </div>
- 
+
 <script>
 (function(){
   let rows = [{"id": "36942", "nombre": "SANDY CULLANCO MENESES", "dni": "75365402", "fecha_matricula": "Viernes 27 de Marzo de 2026", "fecha_inicio": "07/04/2026", "id_carnet": "75365402,176,7002", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "MARTES", "turno": "TARDE", "horario": "02:00pm - 04:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36941", "nombre": "PACHAZ SANDOVAL CESAR PAOLO", "dni": "74237752", "fecha_matricula": "Viernes 27 de Marzo de 2026", "fecha_inicio": "22/03/2026", "id_carnet": "74237752,190,7001", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "02:00pm - 04:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "36938", "nombre": "DANY GUIOVANA MARTINEZ QUISPE", "dni": "21887675", "fecha_matricula": "Viernes 27 de Marzo de 2026", "fecha_inicio": "03/04/2026", "id_carnet": "21887675,4,6998", "curso": "EXCEL EMPRESARIAL", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36940", "nombre": "OTIVO BRAVO YNVER", "dni": "60255606", "fecha_matricula": "Viernes 27 de Marzo de 2026", "fecha_inicio": "22/03/2026", "id_carnet": "60255606,190,7000", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "02:00pm - 04:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "36939", "nombre": "EDGAR RODRIGO LOAYZA VELASCO", "dni": "72170489", "fecha_matricula": "Viernes 27 de Marzo de 2026", "fecha_inicio": "03/04/2026", "id_carnet": "72170489,7,6999", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36937", "nombre": "BERTHA ROSARIO GUTIÉRREZ ROJAS", "dni": "75667172", "fecha_matricula": "Jueves 26 de Marzo de 2026", "fecha_inicio": "03/04/2026", "id_carnet": "75667172,4,6997", "curso": "EXCEL EMPRESARIAL", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36936", "nombre": "JUAN ESTEBAN CARDONA QUINTERO", "dni": "1146440596", "fecha_matricula": "Jueves 26 de Marzo de 2026", "fecha_inicio": "28/03/2026", "id_carnet": "1146440596,190,6996", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "04:30pm - 06:30pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6988", "nombre": "MERLY DORACY YAURI CHÁVEZ", "dni": "43735187", "fecha_matricula": "", "fecha_inicio": "26/03/2026", "id_carnet": "43735187,210,6988", "curso": "COMPUTACIÓN OFIMÁTICA", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6994", "nombre": "KAREN YANET ORELLANA QUISPE", "dni": "78289719", "fecha_matricula": "", "fecha_inicio": "03/04/2026", "id_carnet": "78289719,236,6994", "curso": "UÑAS ACRÍLICAS", "dia": "VIERNES", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6930", "nombre": "MARIA ARACELI VICENTE BRICEÑO", "dni": "74298392", "fecha_matricula": "", "fecha_inicio": "03/04/2026", "id_carnet": "74298392,5,6930", "curso": "INYECTOTERAPIA Y ENFERMERÍA", "dia": "VIERNES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6976", "nombre": "MAGALY MARGARITA FLORES HUAMAN", "dni": "70795097", "fecha_matricula": "", "fecha_inicio": "03/04/2026", "id_carnet": "70795097,182,6976", "curso": "PODOLOGÍA", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7003", "nombre": "WILMER JOEL YANGALI QUINTANA", "dni": "73248921", "fecha_matricula": "", "fecha_inicio": "03/04/2026", "id_carnet": "73248921,4,7003", "curso": "EXCEL EMPRESARIAL", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6992", "nombre": "AYANE ÁNGELES AZUMI MINCHAN FERNÁNDEZ", "dni": "61518726", "fecha_matricula": "", "fecha_inicio": "01/04/2026", "id_carnet": "61518726,97,6992", "curso": "COMPUTACIÓN OFIMÁTICA", "dia": "MIERCOLES - VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6933", "nombre": "MILAGROS ALVA MENDOZA", "dni": "44843173", "fecha_matricula": "", "fecha_inicio": "04/04/2026", "id_carnet": "44843173,202,6933", "curso": "FISIOTERAPIA, MASOTERAPIA Y REHABILITACIÓN", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6989", "nombre": "CLAUDIA SILVANA MENDIETA MEDINA DE PEÑA", "dni": "80334811", "fecha_matricula": "", "fecha_inicio": "04/04/2026", "id_carnet": "80334811,202,6989", "curso": "FISIOTERAPIA, MASOTERAPIA Y REHABILITACIÓN", "dia": "SABADO", "turno": "MAÑANA", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6977", "nombre": "RUDY RUTT FLORES HUAMAN", "dni": "70795098", "fecha_matricula": "", "fecha_inicio": "28/03/2026", "id_carnet": "70795098,1,6977", "curso": "OFIMÁTICA EMPRESARIAL", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6995", "nombre": "JESUS HUGO POZO GAMONAL", "dni": "9373733", "fecha_matricula": "", "fecha_inicio": "04/04/2026", "id_carnet": "09373733,203,6995", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7004", "nombre": "KASUMY JULIET GOMEZ RAMOS", "dni": "62877381", "fecha_matricula": "", "fecha_inicio": "04/04/2026", "id_carnet": "62877381,4,7004", "curso": "EXCEL EMPRESARIAL", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6984", "nombre": "MARIO MATÍAS MALASQUEZ CORDOVA", "dni": "73829936", "fecha_matricula": "", "fecha_inicio": "18/04/2026", "id_carnet": "73829936,190,6984", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6931", "nombre": "JHON MICHAEL AGUIDOS CHUMPITAZ", "dni": "60301686", "fecha_matricula": "", "fecha_inicio": "28/03/2026", "id_carnet": "60301686,190,6931", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "04:30pm - 06:30pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6980", "nombre": "JHON MAYRON ORIHUELA CASTRO", "dni": "44223852", "fecha_matricula": "", "fecha_inicio": "28/03/2026", "id_carnet": "44223852,190,6980", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "04:30pm - 06:30pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6982", "nombre": "BAYRON JOSÉ CRUZ ORIHUELA", "dni": "72996219", "fecha_matricula": "", "fecha_inicio": "28/03/2026", "id_carnet": "72996219,190,6982", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "04:30pm - 06:30pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6979", "nombre": "YENI YANET QUISPE HUAMAM", "dni": "47876860", "fecha_matricula": "", "fecha_inicio": "29/03/2026", "id_carnet": "47876860,193,6979", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6952", "nombre": "DIEGO BENITES NOEMI RUTH", "dni": "60931453", "fecha_matricula": "", "fecha_inicio": "05/04/2026", "id_carnet": "60931453,7,6952", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6964", "nombre": "SALOMÉ GLORIA AGUADO PERALES", "dni": "47450333", "fecha_matricula": "", "fecha_inicio": "05/04/2026", "id_carnet": "47450333,7,6964", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6987", "nombre": "BRENDA BETZABE PEREZ HUAMAN", "dni": "73083459", "fecha_matricula": "", "fecha_inicio": "05/04/2026", "id_carnet": "73083459,7,6987", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6991", "nombre": "DELGADO GARAY TOMMY LEE GERARDO", "dni": "74243837", "fecha_matricula": "", "fecha_inicio": "05/04/2026", "id_carnet": "74243837,7,6991", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6993", "nombre": "NOEMI CONTRERAS CONTRERAS", "dni": "71859573", "fecha_matricula": "", "fecha_inicio": "05/04/2026", "id_carnet": "71859573,7,6993", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6970", "nombre": "SEBASTIAN JOSEPH SAAVEDRA TORREJÓN", "dni": "62962856", "fecha_matricula": "", "fecha_inicio": "29/03/2026", "id_carnet": "62962856,114,6971", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6.955", "nombre": "ALEXANDRA MIA PEVE CASTILLÓN", "dni": "60592073", "fecha_matricula": "", "fecha_inicio": "30/03/2026", "id_carnet": "60592073,193,6955", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "LUNES - MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6.960", "nombre": "MELANIE HEMMA PENADILLA", "dni": "45640931", "fecha_matricula": "", "fecha_inicio": "08/04/2026", "id_carnet": "45640931,193,6960", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "LUNES - MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6.975", "nombre": "GRACIELA DELGADO SAUÑE", "dni": "15440655", "fecha_matricula": "", "fecha_inicio": "30/03/2026", "id_carnet": "15440655,193,6975", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "LUNES - MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6981", "nombre": "FRANK ANTONY LEVANO GALLARDO", "dni": "74869836", "fecha_matricula": "", "fecha_inicio": "07/04/2026", "id_carnet": "74869836,176,6981", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "MARTES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6924", "nombre": "SEGURA CHUMBIMUNE BERTHA OLGA", "dni": "15429291", "fecha_matricula": "", "fecha_inicio": "14/03/2026", "id_carnet": "15429291,203,6924", "curso": "DISEÑO GRÁFICO PUBLICITARIO", "dia": "SABADO", "turno": "NOCHE", "horario": "02:00pm - 04:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "6842", "nombre": "ERIKA IRIS PEREZ QUILLAS", "dni": "77217791", "fecha_matricula": "", "fecha_inicio": "14/03/2026", "id_carnet": "77217791,200,6842", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "REPOSICION DE TARJETA", "estado": "ENTREGADO"}, {"id": "6668", "nombre": "GANELLA YERALDIN GOMEZ AULLA", "dni": "75654233", "fecha_matricula": "", "fecha_inicio": "22/01/2026", "id_carnet": "75654233,210,6668", "curso": "COMPUTACIÓN OFIMÁTICA", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "REPOSICION DE TARJETA", "estado": "ENTREGADO"}, {"id": "36949", "nombre": "KIANA ALESSANDRA LOAYZA FLORIAN", "dni": "61443692", "fecha_matricula": "Lunes 30 de Marzo de 2026", "fecha_inicio": "04/04/2026", "id_carnet": "61443692,202,7012", "curso": "FISIOTERAPIA, MASOTERAPIA Y REHABILITACIÓN", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36948", "nombre": "HILARY DELGADO BLANCO", "dni": "3011452", "fecha_matricula": "Lunes 30 de Marzo de 2026", "fecha_inicio": "23/03/2026", "id_carnet": "003011452,193,7011", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "LUNES - JUEVES", "turno": "TARDE", "horario": "03:00pm - 05:30pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "7139", "nombre": "CEDINA YUIMACHI CURINUQUI", "dni": "5631092", "fecha_matricula": "Lunes 30 de Marzo de 2026", "fecha_inicio": "17/05/2026", "id_carnet": "05631092,7,7139", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36946", "nombre": "JOSSELYN JADIRA CHUMPITAZ MALASQUEZ", "dni": "61085844", "fecha_matricula": "Lunes 30 de Marzo de 2026", "fecha_inicio": "03/04/2026", "id_carnet": "61085844,114,7009", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36945", "nombre": "JHOAN CARLOS FARFÁN ARIAS", "dni": "45864002", "fecha_matricula": "Domingo 29 de Marzo de 2026", "fecha_inicio": "04/04/2026", "id_carnet": "45864002,186,7087", "curso": "CONSTRUCCIÓN E INSTALACIÓN EN DRYWALL Y CIELORRASO", "dia": "SABADO", "turno": "TARDE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36944", "nombre": "MIRIAM QUISPE SACSA", "dni": "16290280", "fecha_matricula": "Domingo 29 de Marzo de 2026", "fecha_inicio": "04/04/2026", "id_carnet": "16290280,200,7006", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "TARDE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7013", "nombre": "KARINA ELIZABETH YALLICO CHUMBE", "dni": "40348280", "fecha_matricula": "", "fecha_inicio": "31/03/2026", "id_carnet": "40348280,114,7013", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "MARTES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6861", "nombre": "AMARELIS ISABEL QUISPE JURADO", "dni": "61389584", "fecha_matricula": "", "fecha_inicio": "25/02/2026", "id_carnet": "61389584,193,6861", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "LUNES - MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "REPOSICION DE TARJETA", "estado": "ENTREGADO"}, {"id": "36954", "nombre": "JEAN CARLOS GARCÍA GONZALEZ", "dni": "4834438", "fecha_matricula": "Miércoles 1 de Abril de 2026", "fecha_inicio": "18/04/2026", "id_carnet": "004834438,203,7018", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36953", "nombre": "BIRYOOD ANDRES MUCHOTRIGO LOZANO", "dni": "74804798", "fecha_matricula": "Miércoles 1 de Abril de 2026", "fecha_inicio": "04/04/2026", "id_carnet": "74804798,203,7017", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36952", "nombre": "OLENKA LIBON LAGUNA", "dni": "72551678", "fecha_matricula": "Martes 31 de Marzo de 2026", "fecha_inicio": "01/04/2026", "id_carnet": "72551678,210,7016", "curso": "COMPUTACIÓN OFIMÁTICA", "dia": "MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36951", "nombre": "RICCEL ALEXANDRA VILLALBA ZABALA", "dni": "8535470", "fecha_matricula": "Lunes 30 de Marzo de 2026", "fecha_inicio": "10/04/2026", "id_carnet": "08535470,5,7015", "curso": "INYECTOTERAPIA Y ENFERMERÍA", "dia": "VIERNES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36950", "nombre": "HECTOR OMAR YATACO TODCO", "dni": "30482121", "fecha_matricula": "Lunes 30 de Marzo de 2026", "fecha_inicio": "05/04/2026", "id_carnet": "30482121,211,7014", "curso": "SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36963", "nombre": "FERNÁNDEZ MONTERO SHARLOOK MICHEL", "dni": "7191101", "fecha_matricula": "Sábado 4 de Abril de 2026", "fecha_inicio": "10/04/2026", "id_carnet": "007191101,236,7028", "curso": "UÑAS ACRÍLICAS", "dia": "VIERNES", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36962", "nombre": "JOHNNY GONZALES", "dni": "45886027", "fecha_matricula": "Viernes 3 de Abril de 2026", "fecha_inicio": "04/04/2026", "id_carnet": "45886027,203,7026", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36961", "nombre": "CARMEN LUZ PINO MORENO", "dni": "41281651", "fecha_matricula": "Viernes 3 de Abril de 2026", "fecha_inicio": "04/04/2026", "id_carnet": "41281651,202,7025", "curso": "FISIOTERAPIA, MASOTERAPIA Y REHABILITACIÓN", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36959", "nombre": "KIMBERLY CORDERO YACTAYO", "dni": "75252736", "fecha_matricula": "Jueves 2 de Abril de 2026", "fecha_inicio": "14/04/2026", "id_carnet": "75252736,193,7023", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "MARTES - VIERNES", "turno": "TARDE", "horario": "03:00pm - 05:30pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36958", "nombre": "YANCCE TACSI MARY LUZ", "dni": "40971551", "fecha_matricula": "Jueves 2 de Abril de 2026", "fecha_inicio": "07/04/2026", "id_carnet": "40971551,114,7022", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "MARTES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36957", "nombre": "JIMMY ALDHAIR APOLINARIO YAURICASA", "dni": "62041153", "fecha_matricula": "Miércoles 1 de Abril de 2026", "fecha_inicio": "04/04/2026", "id_carnet": "62041153,1,7021", "curso": "EXCEL EMPRESARIAL", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36955", "nombre": "YASURI PALOMINO DE LA CRUZ", "dni": "75012364", "fecha_matricula": "Miércoles 1 de Abril de 2026", "fecha_inicio": "10/04/2026", "id_carnet": "75012364,4,7019", "curso": "EXCEL EMPRESARIAL", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7027", "nombre": "KARINA ELIZABETH YALLICO CHUMBE", "dni": "40348280", "fecha_matricula": "", "fecha_inicio": "07/04/2026", "id_carnet": "40348280,176,7027", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "MARTES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6883", "nombre": "STEPHANIE FLORES QUISPE", "dni": "47158745", "fecha_matricula": "", "fecha_inicio": "28/02/2026", "id_carnet": "47158745,190,6883", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "04:30pm - 06:30pm", "situacion": "REPOSICION DE TARJETA", "estado": "ENTREGADO"}, {"id": "7029", "nombre": "CARRASCO LUCAR MARCO ANTONIO", "dni": "46059234", "fecha_matricula": "", "fecha_inicio": "05/04/2026", "id_carnet": "46059234,7,7029", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36976", "nombre": "MIRELLA ELSA ALVARO CAMPOS", "dni": "60326743", "fecha_matricula": "Martes 7 de Abril de 2026", "fecha_inicio": "04/10/2026", "id_carnet": "60326743,236,7046", "curso": "UÑAS ACRÍLICAS", "dia": "VIERNES", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7043", "nombre": "ANDY MIGUEL ORMEÑO CANDELA", "dni": "71189126", "fecha_matricula": "Martes 7 de Abril de 2026", "fecha_inicio": "04/04/2026", "id_carnet": "71189126,203,7043", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "36974", "nombre": "YSABEL HAYDEE MANCO ABURTO", "dni": "15434544", "fecha_matricula": "Martes 7 de Abril de 2026", "fecha_inicio": "04/10/2026", "id_carnet": "15434544,182,7042", "curso": "PODOLOGÍA", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36971", "nombre": "ANGIE JENNIFER GUTIÉRREZ CALAGUA", "dni": "77904103", "fecha_matricula": "Lunes 6 de Abril de 2026", "fecha_inicio": "04/07/2026", "id_carnet": "77904103,114,7039", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "MARTES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36969", "nombre": "LEYDY DEL ROSARIO ROJAS FRANCIA", "dni": "72565748", "fecha_matricula": "Lunes 6 de Abril de 2026", "fecha_inicio": "22/04/2026", "id_carnet": "72565748,202,7035", "curso": "FISIOTERAPIA, MASOTERAPIA Y REHABILITACIÓN", "dia": "MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36968", "nombre": "XIOMARA GUADALUPE HUAMANÑAHUI CÁRDENAS", "dni": "61837439", "fecha_matricula": "Domingo 5 de Abril de 2026", "fecha_inicio": "19/04/2026", "id_carnet": "61837439,211,7034", "curso": "SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36967", "nombre": "MARCO ANTONIO SALAS SALCEDO", "dni": "71334280", "fecha_matricula": "Domingo 5 de Abril de 2026", "fecha_inicio": "11/04/2026", "id_carnet": "71334280,203,7033", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36966", "nombre": "ROSSEL BRAYHAN NAJARRO CASAS", "dni": "77159470", "fecha_matricula": "Domingo 5 de Abril de 2026", "fecha_inicio": "18/04/2026", "id_carnet": "77159470,190,7032", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 04:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36965", "nombre": "LEONEL DIOMEDES PÉREZ MANCHA", "dni": "44981098", "fecha_matricula": "Domingo 5 de Abril de 2026", "fecha_inicio": "11/04/2026", "id_carnet": "44981098,203,7031", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36964", "nombre": "KIMBERLY VIVAS RODRÍGUEZ", "dni": "75307417", "fecha_matricula": "Sábado 4 de Abril de 2026", "fecha_inicio": "05/04/2026", "id_carnet": "75307417,193,7030", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36978", "nombre": "DIMAS MENESES GUTIÉRREZ", "dni": "41591641", "fecha_matricula": "Miércoles 8 de Abril de 2026", "fecha_inicio": "09/04/2026", "id_carnet": "41591641,210,7048", "curso": "COMPUTACIÓN OFIMÁTICA", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7044", "nombre": "ELIZABETH ANDREA CUSI BALVIN", "dni": "71605902", "fecha_matricula": "", "fecha_inicio": "17/04/2026", "id_carnet": "71605902,7,7044", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7050", "nombre": "BELLA LUZ MIRANDA RUIZ", "dni": "72308379", "fecha_matricula": "", "fecha_inicio": "10/04/2026", "id_carnet": "72308379,4,7050", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7052", "nombre": "WILMER YANGALI HUAMAN CAJA", "dni": "15359460", "fecha_matricula": "", "fecha_inicio": "10/04/2026", "id_carnet": "15359460,4,7052", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36988", "nombre": "ROSA INÉS GÓMEZ DÍAZ DE ALARCÓN", "dni": "15382257", "fecha_matricula": "Lunes 13 de Abril de 2026", "fecha_inicio": "17/04/2026", "id_carnet": "15382257,5,7060", "curso": "INYECTOTERAPIA Y ENFERMERÍA", "dia": "VIERNES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36987", "nombre": "HILDSON OLIVEIRA AGUIAR", "dni": "9753963", "fecha_matricula": "Domingo 12 de Abril de 2026", "fecha_inicio": "19/04/2026", "id_carnet": "009753963,186,7058", "curso": "CONSTRUCCIÓN E INSTALACIÓN EN DRYWALL Y CIELORRASO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36984", "nombre": "EVELYN MARIBEL RUPAY PUERTA", "dni": "75467338", "fecha_matricula": "Sábado 11 de Abril de 2026", "fecha_inicio": "17/04/2026", "id_carnet": "75467338,5,7055", "curso": "INYECTOTERAPIA Y SALUD", "dia": "VIERNES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "36983", "nombre": "ROSA CAMA AUDANTE", "dni": "40932509", "fecha_matricula": "Sábado 11 de Abril de 2026", "fecha_inicio": "19/04/2026", "id_carnet": "40932509,159,7053", "curso": "COMPUTACIÓN CERO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7054", "nombre": "GINGER SALOMÉ AUDANTE YAURI", "dni": "61309623", "fecha_matricula": "", "fecha_inicio": "17/05/2026", "id_carnet": "61309623,7,7054", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7059", "nombre": "MARIA DEL ROSARIO HUIDOBRO CARDENAS", "dni": "9572265", "fecha_matricula": "", "fecha_inicio": "18/04/2026", "id_carnet": "09572265,190,7059", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "02:00pm - 04:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7045", "nombre": "JHON DALTON HUAMAN HUARI", "dni": "45449610", "fecha_matricula": "", "fecha_inicio": "19/04/2026", "id_carnet": "45449610,186,7045", "curso": "CONSTRUCCIÓN E INSTALACIÓN EN DRYWALL Y CIELORRASO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7037", "nombre": "YOLANDA AGUILAR SUPA", "dni": "43680298", "fecha_matricula": "", "fecha_inicio": "19/04/2026", "id_carnet": "43680298,211,7037", "curso": "SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7057", "nombre": "JEFFERIS STUARDO SANCHEZ CASTILLO", "dni": "48392517", "fecha_matricula": "", "fecha_inicio": "19/04/2026", "id_carnet": "48392517,211,7057", "curso": "SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7063", "nombre": "AZUMI ALEXANDRA MESA ESCAJADILLO", "dni": "62963310", "fecha_matricula": "Miércoles 15 de Abril de 2026", "fecha_inicio": "17/04/2026", "id_carnet": "62963310,193,7063", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "MARTES - VIERNES", "turno": "TARDE", "horario": "03:00pm - 05:30pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7064", "nombre": "DEYSI ROCÍO FARGE HUAYNAMARCA", "dni": "61128400", "fecha_matricula": "", "fecha_inicio": "01/05/2026", "id_carnet": "61128400,242,7064", "curso": "PEINADO Y MAQUILLAJE", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7061", "nombre": "MACALUPU CHIOK KAREN GABRIELA", "dni": "46060855", "fecha_matricula": "Martes 14 de Abril de 2026", "fecha_inicio": "18/04/2026", "id_carnet": "46060855,200,7061", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7067", "nombre": "MOISÉS AMAO GUZMÁN", "dni": "48413206", "fecha_matricula": "Miércoles 15 de Abril de 2026", "fecha_inicio": "18/04/2026", "id_carnet": "48413206,203,7067", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7071", "nombre": "FABIOLA YABAR YLLA", "dni": "79382237", "fecha_matricula": "", "fecha_inicio": "16/04/2026", "id_carnet": "79382237,8,7071", "curso": "DISEÑO GRÁFICO PUBLICITARIO", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7069", "nombre": "MARYCIELO STEFANY HIPOLITO REYES", "dni": "73810354", "fecha_matricula": "Miércoles 15 de Abril de 2026", "fecha_inicio": "17/04/2026", "id_carnet": "73810354,4,7069", "curso": "EXCEL EMPRESARIAL", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7070", "nombre": "JORGE GUERRA MAGALLANES", "dni": "41396508", "fecha_matricula": "", "fecha_inicio": "18/04/2026", "id_carnet": "41396508,203,7070", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7005", "nombre": "CHUMPITAZ AVILA ANA MARIA", "dni": "15434384", "fecha_matricula": "", "fecha_inicio": "19/04/2026", "id_carnet": "15434384,159,7005", "curso": "COMPUTACIÓN CERO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7073", "nombre": "VICTOR JHON ROSAS ROJAS", "dni": "60931325", "fecha_matricula": "", "fecha_inicio": "17/04/2026", "id_carnet": "60931325,7,7073", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7081", "nombre": "GABRIELA DEL PILAR CABRERA ZAMUDIO", "dni": "75169647", "fecha_matricula": "Viernes 17 de Abril de 2026", "fecha_inicio": "17/04/2026", "id_carnet": "75169647,182,7081", "curso": "PODOLOGÍA", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "7080", "nombre": "ADRIANO FRANCESCO RIVAS CHIPA", "dni": "62643106", "fecha_matricula": "Viernes 17 de Abril de 2026", "fecha_inicio": "23/04/2026", "id_carnet": "62643106,210,7080", "curso": "COMPUTACIÓN OFIMÁTICA", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7079", "nombre": "FRANCIS RIVAS BUSTAMANTE", "dni": "62492189", "fecha_matricula": "Viernes 17 de Abril de 2026", "fecha_inicio": "23/04/2026", "id_carnet": "62492189,210,7079", "curso": "COMPUTACIÓN OFIMÁTICA", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7075", "nombre": "SAYUMI CANDELARIA FERNÁNDEZ CUYA", "dni": "60701887", "fecha_matricula": "Jueves 16 de Abril de 2026", "fecha_inicio": "02/05/2026", "id_carnet": "60701887,182,7075", "curso": "PODOLOGÍA", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7074", "nombre": "JORGE LENIN CUZCANO CARBONEL", "dni": "80071383", "fecha_matricula": "Jueves 16 de Abril de 2026", "fecha_inicio": "19/04/2026", "id_carnet": "80071383,186,7074", "curso": "CONSTRUCCIÓN E INSTALACIÓN EN DRYWALL Y CIELORRASO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7072", "nombre": "MARIA CONSUELO ARMAS SOTO", "dni": "15352473", "fecha_matricula": "Jueves 16 de Abril de 2026", "fecha_inicio": "22/04/2026", "id_carnet": "15352473,202,7072", "curso": "FISIOTERAPIA, MASOTERAPIA Y REHABILITACIÓN", "dia": "MIERCOLES", "turno": "NOCHE", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7088", "nombre": "SEBASTIAN FABIANO CARHUAS FLORES", "dni": "62051917", "fecha_matricula": "Sábado 18 de Abril de 2026", "fecha_inicio": "18/04/2026", "id_carnet": "62051917,190,7088", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 04:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7089", "nombre": "EDISON ANDRÉE CHAMBERGO PEÑA", "dni": "61309568", "fecha_matricula": "Sábado 18 de Abril de 2026", "fecha_inicio": "19/04/2026", "id_carnet": "61309568,190,7089", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 04:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7085", "nombre": "YOSELIN PAMELA PEDRAZA AMESQUITA", "dni": "76272229", "fecha_matricula": "", "fecha_inicio": "25/04/2026", "id_carnet": "76272229,200,7085", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7084", "nombre": "VALENTINA SALOMÉ LARA YACTAYO", "dni": "79783004", "fecha_matricula": "", "fecha_inicio": "19/04/2026", "id_carnet": "79783004,159,7084", "curso": "COMPUTACIÓN CERO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7093", "nombre": "OMAR CCAHUA LUQUE", "dni": "77574997", "fecha_matricula": "Sábado 18 de Abril de 2026", "fecha_inicio": "30/04/2026", "id_carnet": "77574997,7,7093", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7098", "nombre": "DIANA VERONICA ZAMBRANO ÑACARE", "dni": "43042910", "fecha_matricula": "Lunes 20 de Abril de 2026", "fecha_inicio": "30/04/2026", "id_carnet": "43042910,7,7098", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7090", "nombre": "KATHERINE YESSENIA PALOMINO ARENAS", "dni": "76645346", "fecha_matricula": "Sábado 18 de Abril de 2026", "fecha_inicio": "24/04/2026", "id_carnet": "76645346,1,7090", "curso": "OFIMÁTICA EMPRESARIAL", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7109", "nombre": "GIANELLA MARTHA CHANCA YATACO", "dni": "73187139", "fecha_matricula": "Miércoles 22 de Abril de 2026", "fecha_inicio": "25/04/2026", "id_carnet": "73187139,1,7109", "curso": "OFIMÁTICA EMPRESARIAL", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7111", "nombre": "JUAN ANTONIO VARGAS CANDELA", "dni": "74431068", "fecha_matricula": "Miércoles 22 de Abril de 2026", "fecha_inicio": "26/04/2026", "id_carnet": "74431068,1,7111", "curso": "OFIMÁTICA EMPRESARIAL", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7095", "nombre": "MARITZA CHIPANE HUACHACA", "dni": "47292087", "fecha_matricula": "Domingo 19 de Abril de 2026", "fecha_inicio": "17/04/2026", "id_carnet": "47292087,182,7095", "curso": "PODOLOGÍA", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "7104", "nombre": "ZULAY COROMOTO CHIRINOS VICTORA", "dni": "6588048", "fecha_matricula": "Martes 21 de Abril de 2026", "fecha_inicio": "02/05/2026", "id_carnet": "006588048,182,7104", "curso": "PODOLOGÍA", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7086", "nombre": "MATEO GABRIEL QUISPE GIL", "dni": "62962619", "fecha_matricula": "", "fecha_inicio": "25/04/2026", "id_carnet": "62962619,210,7086", "curso": "COMPUTACIÓN OFIMÁTICA", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7101", "nombre": "ROJAS SANTIAGO LEONIDAS OLIVIA", "dni": "70556742", "fecha_matricula": "", "fecha_inicio": "02/05/2026", "id_carnet": "70556742,236,7101", "curso": "UÑAS ACRÍLICAS", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7099", "nombre": "LIDIA ARBIZU CULLANCO", "dni": "15421688", "fecha_matricula": "Lunes 20 de Abril de 2026", "fecha_inicio": "02/05/2026", "id_carnet": "15421688,192,7099", "curso": "COSMIATRIA", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7091", "nombre": "GARDY HEERWIN VELIZ HUACCHILLO", "dni": "45388345", "fecha_matricula": "Sábado 18 de Abril de 2026", "fecha_inicio": "18/04/2026", "id_carnet": "45388345,203,7091", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7094", "nombre": "DIRCEU ALAN QUISPE AURIS", "dni": "43216002", "fecha_matricula": "Sábado 18 de Abril de 2026", "fecha_inicio": "18/04/2026", "id_carnet": "43216002,203,7094", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "7106", "nombre": "GUILLERMO ROLAND ANTONIO PAZSOLÁN", "dni": "21402284", "fecha_matricula": "Martes 21 de Abril de 2026", "fecha_inicio": "03/05/2026", "id_carnet": "21402284,159,7106", "curso": "COMPUTACIÓN CERO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7096", "nombre": "STEFANY YERMID CHULLUNCUY HUARI", "dni": "62040105", "fecha_matricula": "Domingo 19 de Abril de 2026", "fecha_inicio": "27/04/2026", "id_carnet": "62040105,193,7096", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "LUNES - MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7100", "nombre": "ROSA MILEN CCALA CONTRERAS", "dni": "76430124", "fecha_matricula": "Lunes 20 de Abril de 2026", "fecha_inicio": "27/04/2026", "id_carnet": "76430124,193,7100", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "LUNES - MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7092", "nombre": "MONICA ALEXANDRA ESPILCO SALDAÑA", "dni": "48767358", "fecha_matricula": "", "fecha_inicio": "19/04/2026", "id_carnet": "48767358,190,7092", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "02:00pm - 04:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7113", "nombre": "FELICITA TAYPE CONDE", "dni": "46030829", "fecha_matricula": "Jueves 23 de Abril de 2026", "fecha_inicio": "01/05/2026", "id_carnet": "46030829,242,7113", "curso": "PEINADO Y MAQUILLAJE", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7114", "nombre": "VICERREL RIOS CARLOS ANDRES", "dni": "72874446", "fecha_matricula": "", "fecha_inicio": "26/04/2026", "id_carnet": "72874446,113,7114", "curso": "REPARACIÓN DE CELULARES Y TABLETS", "dia": "DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7115", "nombre": "CASTILLON HURTADO RUTH JAKELINE", "dni": "60618599", "fecha_matricula": "Viernes 24 de Abril de 2026", "fecha_inicio": "29/04/2026", "id_carnet": "60618599,97,7115", "curso": "COMPUTACIÓN PROFESIONAL", "dia": "MIERCOLES - VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7116", "nombre": "CASTILLON HURTADO RUTH JAKELINE", "dni": "60618599", "fecha_matricula": "", "fecha_inicio": "02/05/2026", "id_carnet": "60618599,202,7116", "curso": "FISIOTERAPIA, MASOTERAPIA Y REHABILITACIÓN", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7107", "nombre": "ALICIA LÁZARO CULLANCO", "dni": "42836233", "fecha_matricula": "Martes 21 de Abril de 2026", "fecha_inicio": "22/04/2026", "id_carnet": "42836233,202,7107", "curso": "FISIOTERAPIA, MASOTERAPIA Y REHABILITACIÓN", "dia": "MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7103", "nombre": "KELLY EDINA LUYO PORTUGUEZ", "dni": "40257067", "fecha_matricula": "Martes 21 de Abril de 2026", "fecha_inicio": "22/04/2026", "id_carnet": "40257067,202,7103", "curso": "FISIOTERAPIA, MASOTERAPIA Y REHABILITACIÓN", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7119", "nombre": "ALCIDES LEONARDO QUISPE AGUILAR", "dni": "74869955", "fecha_matricula": "Lunes 27 de Abril de 2026", "fecha_inicio": "17/05/2026", "id_carnet": "74869955,190,7119", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "02:00pm - 04:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7124", "nombre": "JHON KLENNEX HUAMAN MONTES", "dni": "42313623", "fecha_matricula": "Martes 28 de Abril de 2026", "fecha_inicio": "09/05/2026", "id_carnet": "42313623,203,7124", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7122", "nombre": "TERESA TORRES GRANDEZ DE VICENTE", "dni": "15422988", "fecha_matricula": "", "fecha_inicio": "23/05/2026", "id_carnet": "15422988,8,7122", "curso": "DISEÑO GRÁFICO PUBLICITARIO", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7117", "nombre": "MARCOS MARIANO VASQUEZ ALDAZABAL", "dni": "41756927", "fecha_matricula": "Domingo 26 de Abril de 2026", "fecha_inicio": "26/04/2026", "id_carnet": "41756927,159,7117", "curso": "COMPUTACIÓN CERO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7121", "nombre": "MARÍA TERESA CARBONEL VICENTE", "dni": "15411594", "fecha_matricula": "Lunes 27 de Abril de 2026", "fecha_inicio": "03/05/2026", "id_carnet": "15411594,211,7121", "curso": "SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7125", "nombre": "FRANK JHAIR QUEVEDO DE LA CRUZ", "dni": "62051816", "fecha_matricula": "Martes 28 de Abril de 2026", "fecha_inicio": "02/05/2026", "id_carnet": "62051816,190,7125", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "04:30pm - 06:30pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7118", "nombre": "MARIA LUISA AYAUCAN SOLANO", "dni": "72544931", "fecha_matricula": "", "fecha_inicio": "05/05/2026", "id_carnet": "72544931,176,7118", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "MARTES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7127", "nombre": "MENDOZA CUZCANO MARIELA VICTORIA", "dni": "15421475", "fecha_matricula": "Martes 28 de Abril de 2026", "fecha_inicio": "02/05/2026", "id_carnet": "15421475,182,7127", "curso": "PODOLOGÍA", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7130", "nombre": "VANESSA AMALY CALAGUA BALBIN", "dni": "47049319", "fecha_matricula": "Miércoles 29 de Abril de 2026", "fecha_inicio": "07/05/2026", "id_carnet": "47049319,7,7130", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7128", "nombre": "LOREN TATIANA PEÑA VICENTE", "dni": "71369479", "fecha_matricula": "Martes 28 de Abril de 2026", "fecha_inicio": "06/05/2026", "id_carnet": "71369479,210,7128", "curso": "COMPUTACIÓN OFIMÁTICA", "dia": "MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7133", "nombre": "DANUSKA LUYO CHAVEZ", "dni": "74432866", "fecha_matricula": "", "fecha_inicio": "02/05/2026", "id_carnet": "74432866,192,7133", "curso": "COSMIATRIA", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7134", "nombre": "VICTOR AARON GODOY AYALA", "dni": "73027366", "fecha_matricula": "", "fecha_inicio": "09/05/2026", "id_carnet": "73027366,4,7134", "curso": "EXCEL EMPRESARIAL", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7120", "nombre": "ALCIDES LEONARDO QUISPE AGUILAR", "dni": "74869955", "fecha_matricula": "", "fecha_inicio": "02/05/2026", "id_carnet": "74869955,202,7120", "curso": "FISIOTERAPIA, MASOTERAPIA Y REHABILITACIÓN", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7132", "nombre": "PATRICK JORDAN GÓMEZ CARRANZA", "dni": "60512050", "fecha_matricula": "Jueves 30 de Abril de 2026", "fecha_inicio": "08/05/2026", "id_carnet": "60512050,4,7132", "curso": "EXCEL EMPRESARIAL", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7131", "nombre": "ABIGAIL CRISEL SANDOVAL SANDOVAL", "dni": "60310623", "fecha_matricula": "Jueves 30 de Abril de 2026", "fecha_inicio": "08/05/2026", "id_carnet": "60310623,114,7131", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "VIERNES", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6710", "nombre": "YAÑES SANCHEZ FRABRIZIO ALCIDES JESUS", "dni": "61443439", "fecha_matricula": "", "fecha_inicio": "24/01/2026", "id_carnet": "61443439,190,6710", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "04:30pm - 06:30pm", "situacion": "REPOSICION DE TARJETA", "estado": "ENTREGADO"}, {"id": "7151", "nombre": "NICOLAS ANGEL QUIÑONES HUILLCARA", "dni": "60945135", "fecha_matricula": "Martes 5 de Mayo de 2026", "fecha_inicio": "17/05/2026", "id_carnet": "60945135,113,7151", "curso": "REPARACIÓN DE CELULARES Y TABLETS", "dia": "DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7149", "nombre": "BRYAN ADRIAN SANCHEZ LEON", "dni": "72742929", "fecha_matricula": "Lunes 4 de Mayo de 2026", "fecha_inicio": "09/05/2026", "id_carnet": "72742929,203,7149", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7148", "nombre": "LUCY EVELYN GIRON MELGAR", "dni": "40773383", "fecha_matricula": "Domingo 3 de Mayo de 2026", "fecha_inicio": "19/05/2026", "id_carnet": "40773383,193,7148", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "MARTES - VIERNES", "turno": "TARDE", "horario": "03:00pm - 05:30pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7147", "nombre": "YERSON ALI BRAVO SALAZAR", "dni": "62733868", "fecha_matricula": "Domingo 3 de Mayo de 2026", "fecha_inicio": "02/05/2026", "id_carnet": "62733868,190,7147", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "04:30pm - 06:30pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "7146", "nombre": "CARLOS EDUARDO PORTUGUEZ HUAMÁN", "dni": "45713599", "fecha_matricula": "Domingo 3 de Mayo de 2026", "fecha_inicio": "17/05/2026", "id_carnet": "45713599,211,7146", "curso": "SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL", "dia": "DOMINGO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7145", "nombre": "MARILUZ KHATERINE SÁNCHEZ ALVIZURI", "dni": "74432923", "fecha_matricula": "Domingo 3 de Mayo de 2026", "fecha_inicio": "17/05/2026", "id_carnet": "74432923,211,7145", "curso": "SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7138", "nombre": "ROXANA SOFÍA RIVERA PAYANO", "dni": "48029331", "fecha_matricula": "Sábado 2 de Mayo de 2026", "fecha_inicio": "20/05/2026", "id_carnet": "48029331,202,7138", "curso": "FISIOTERAPIA, MASOTERAPIA Y REHABILITACIÓN", "dia": "MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7136", "nombre": "YESSICA LIZBETH FLORES BAUTISTA", "dni": "47088306", "fecha_matricula": "Sábado 2 de Mayo de 2026", "fecha_inicio": "08/05/2026", "id_carnet": "47088306,114,7136", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "VIERNES", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7137", "nombre": "DIANA VICENTE PAYANO", "dni": "45646337", "fecha_matricula": "", "fecha_inicio": "20/05/2026", "id_carnet": "45646337,202,7137", "curso": "FISIOTERAPIA, MASOTERAPIA Y REHABILITACIÓN", "dia": "MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7152", "nombre": "NAJHELY XIOMARA QUISPE RAMOS", "dni": "75449960", "fecha_matricula": "", "fecha_inicio": "06/05/2026", "id_carnet": "75449960,158,7152", "curso": "ASISTENTE ADMINISTRATIVO COMPUTARIZADO", "dia": "MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7143", "nombre": "OFELIA ESTHER LOPEZ PADILLA", "dni": "15429647", "fecha_matricula": "", "fecha_inicio": "16/05/2026", "id_carnet": "15429647,1,7143", "curso": "OFIMÁTICA EMPRESARIAL", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7142", "nombre": "ERIKA IRIS PEREZ QUILLAS", "dni": "77217791", "fecha_matricula": "", "fecha_inicio": "02/05/2026", "id_carnet": "77217791,192,7142", "curso": "COSMIATRIA", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "7153", "nombre": "JOSE LUIS CAMACHO ALZATE", "dni": "18435302", "fecha_matricula": "Jueves 7 de Mayo de 2026", "fecha_inicio": "17/05/2026", "id_carnet": "18435302,113,7153", "curso": "REPARACIÓN DE CELULARES Y TABLETS", "dia": "DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7155", "nombre": "EVA LUISA VELÁSQUEZ DE LA CRUZ", "dni": "9777125", "fecha_matricula": "Viernes 8 de Mayo de 2026", "fecha_inicio": "09/05/2026", "id_carnet": "09777125,200,7155", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7157", "nombre": "DORIS LUZ CÁRDENAS SÁNCHEZ", "dni": "44296520", "fecha_matricula": "", "fecha_inicio": "19/05/2026", "id_carnet": "44296520,176,7157", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "MARTES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7161", "nombre": "EDWHED NUÑEZ MARTINEZ", "dni": "61128193", "fecha_matricula": "Domingo 10 de Mayo de 2026", "fecha_inicio": "09/05/2026", "id_carnet": "61128193,203,7161", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "7160", "nombre": "MIGUEL ANGELO VARGAS POMATAY", "dni": "60822252", "fecha_matricula": "Domingo 10 de Mayo de 2026", "fecha_inicio": "17/05/2026", "id_carnet": "60822252,190,7160", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "02:00pm - 04:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7166", "nombre": "ANALY SOFIA CALAGUA MALASQUEZ", "dni": "60070916", "fecha_matricula": "Miércoles 13 de Mayo de 2026", "fecha_inicio": "25/05/2026", "id_carnet": "60070916,193,7166", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "LUNES - MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7164", "nombre": "JENNY JESÚS PINEDO PEÑAFIEL", "dni": "10278708", "fecha_matricula": "Miércoles 13 de Mayo de 2026", "fecha_inicio": "16/05/2026", "id_carnet": "10278708,200,7164", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7165", "nombre": "JHON MAYRON ORIHUELA CASTRO", "dni": "44223852", "fecha_matricula": "", "fecha_inicio": "20/05/2026", "id_carnet": "44223852,202,7165", "curso": "FISIOTERAPIA, MASOTERAPIA Y REHABILITACIÓN", "dia": "MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6602", "nombre": "JESSICA MILAGROS FRANCIA MARTÍNEZ", "dni": "46287971", "fecha_matricula": "", "fecha_inicio": "19/01/2026", "id_carnet": "46287971,193,6602", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "LUNES - JUEVES", "turno": "TARDE", "horario": "03:00pm - 05:30pm", "situacion": "REPOSICION DE TARJETA", "estado": "ENTREGADO"}, {"id": "7174", "nombre": "KEMERLIN PAMELA TASAYCO LLANOS", "dni": "71230552", "fecha_matricula": "Viernes 15 de Mayo de 2026", "fecha_inicio": "18/05/2026", "id_carnet": "71230552,189,7174", "curso": "BARTENDER Y COCTELERÍA", "dia": "LUNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7173", "nombre": "MARGARITA CLARA GUERRA GUTIERREZ DE USURIN", "dni": "47145612", "fecha_matricula": "Viernes 15 de Mayo de 2026", "fecha_inicio": "22/05/2026", "id_carnet": "47145612,5,7173", "curso": "INYECTOTERAPIA Y ENFERMERÍA", "dia": "VIERNES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7171", "nombre": "RUBI TATIANA BECERRA FRANCIA", "dni": "48652399", "fecha_matricula": "Viernes 15 de Mayo de 2026", "fecha_inicio": "15/05/2026", "id_carnet": "48652399,114,7172", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "VIERNES", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7170", "nombre": "JACKELINNE NICOLLE COSI SALAZAR", "dni": "75449219", "fecha_matricula": "Jueves 14 de Mayo de 2026", "fecha_inicio": "16/05/2026", "id_carnet": "75449219,210,7170", "curso": "COMPUTACIÓN OFIMÁTICA", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7168", "nombre": "MARÍA DE LOS ÁNGELES ORIHUELA QUISPE", "dni": "73248982", "fecha_matricula": "Jueves 14 de Mayo de 2026", "fecha_inicio": "16/05/2026", "id_carnet": "73248982,236,7168", "curso": "UÑAS ACRÍLICAS", "dia": "SABADO", "turno": "MAÑANA", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7169", "nombre": "MARÍA EDITH JOYA SANCHEZ", "dni": "15450355", "fecha_matricula": "Jueves 14 de Mayo de 2026", "fecha_inicio": "19/05/2026", "id_carnet": "15450355,176,7169", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "MARTES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7167", "nombre": "MELANNIE BREYZ ANGELES CARHUAS BALVIN", "dni": "61496289", "fecha_matricula": "Jueves 14 de Mayo de 2026", "fecha_inicio": "17/05/2026", "id_carnet": "61496289,113,7167", "curso": "REPARACIÓN DE CELULARES Y TABLETS", "dia": "DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7171", "nombre": "KIMBERLY MITZHEI SILVA OCHOA", "dni": "73718586", "fecha_matricula": "", "fecha_inicio": "19/05/2026", "id_carnet": "73718586,114,7171", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "MARTES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7175", "nombre": "JUAN VICENTE VELIS MOYERTONE", "dni": "4563001", "fecha_matricula": "Viernes 15 de Mayo de 2026", "fecha_inicio": "19/05/2026", "id_carnet": "004563001,176,7175", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "MARTES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7176", "nombre": "ESTEFANY ANALY GUTIERREZ FLORES", "dni": "75449728", "fecha_matricula": "", "fecha_inicio": "29/05/2026", "id_carnet": "75449728,4,7176", "curso": "EXCEL EMPRESARIAL", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7177", "nombre": "SORELY LIZET PERALES MANRIQUE", "dni": "62051957", "fecha_matricula": "Sábado 16 de Mayo de 2026", "fecha_inicio": "21/05/2026", "id_carnet": "62051957,193,7177", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "LUNES - JUEVES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7178", "nombre": "SORELY LIZET PERALES MANRIQUE", "dni": "62051957", "fecha_matricula": "", "fecha_inicio": "22/05/2026", "id_carnet": "62051957,114,7178", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "VIERNES", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7179", "nombre": "SULCA CUBILLAS GREGORIA", "dni": "48014930", "fecha_matricula": "", "fecha_inicio": "16/05/2026", "id_carnet": "48014930,200,7179", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7186", "nombre": "MARÍA MERCEDES SÁNCHEZ ROMERO", "dni": "48085437", "fecha_matricula": "Martes 19 de Mayo de 2026", "fecha_inicio": "23/05/2026", "id_carnet": "48085437,236,7186", "curso": "UÑAS ACRÍLICAS", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7185", "nombre": "DAMARIS YULIET HUACHO PAUCCA", "dni": "61992120", "fecha_matricula": "Martes 19 de Mayo de 2026", "fecha_inicio": "19/05/2026", "id_carnet": "61992120,193,7185", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "MARTES", "turno": "TARDE", "horario": "03:00pm - 05:30pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7182", "nombre": "HAKJAK NAOMY SÁNCHEZ PUMACAYO", "dni": "60525615", "fecha_matricula": "Domingo 17 de Mayo de 2026", "fecha_inicio": "21/05/2026", "id_carnet": "60525615,193,7182", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "LUNES - JUEVES", "turno": "TARDE", "horario": "03:00pm - 05:30pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7195", "nombre": "CARLOS ANTONIO BOADA DE LA CRUZ", "dni": "45811548", "fecha_matricula": "Thursday 21 de May de 2026", "fecha_inicio": "24/05/2026", "id_carnet": "45811548,211,7195", "curso": "SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7194", "nombre": "BRAULIO FREDY ROJAS RAMOS", "dni": "21879188", "fecha_matricula": "Jueves 21 de Mayo de 2026", "fecha_inicio": "24/05/2026", "id_carnet": "21879188,211,7194", "curso": "SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7193", "nombre": "MARIA GISELLA QUISPE RAMOS", "dni": "43691587", "fecha_matricula": "Jueves 21 de Mayo de 2026", "fecha_inicio": "16/05/2026", "id_carnet": "43691587,182,7193", "curso": "PODOLOGÍA", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "7192", "nombre": "YASIRA JASMIN SANTOS QUISPE", "dni": "62162947", "fecha_matricula": "Jueves 21 de Mayo de 2026", "fecha_inicio": "16/05/2026", "id_carnet": "62162947,182,7192", "curso": "PODOLOGÍA", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "7190", "nombre": "ROBERT SILVA LUNA", "dni": "9526669", "fecha_matricula": "Miércoles 20 de Mayo de 2026", "fecha_inicio": "24/05/2026", "id_carnet": "09526669,211,7190", "curso": "SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7188", "nombre": "NAOMI NICOLE MIRANDA CHUMPITAZ", "dni": "74427985", "fecha_matricula": "Miércoles 20 de Mayo de 2026", "fecha_inicio": "28/05/2026", "id_carnet": "74427985,236,7188", "curso": "UÑAS ACRÍLICAS", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7197", "nombre": "SABINO LIZANA ENCISO", "dni": "15377505", "fecha_matricula": "Viernes 22 de Mayo de 2026", "fecha_inicio": "24/05/2026", "id_carnet": "15377505,186,7197", "curso": "CONSTRUCCIÓN E INSTALACIÓN EN DRYWALL Y CIELORRASO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7203", "nombre": "ARIANNA DE LOS ANGELES DE LA CRUZ REAÑO", "dni": "63202412", "fecha_matricula": "Viernes 22 de Mayo de 2026", "fecha_inicio": "23/05/2026", "id_carnet": "63202412,8,7203", "curso": "DISEÑO GRÁFICO PUBLICITARIO", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7201", "nombre": "ELIZABETH GARCÍA YCHPAS", "dni": "77804455", "fecha_matricula": "Viernes 22 de Mayo de 2026", "fecha_inicio": "30/05/2026", "id_carnet": "77804455,200,7201", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7200", "nombre": "SALHUANA VALLEJOS HEILY ANGELY", "dni": "61507639", "fecha_matricula": "Viernes 22 de Mayo de 2026", "fecha_inicio": "26/05/2026", "id_carnet": "61507639,114,7200", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "MARTES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7199", "nombre": "TEODORA MUÑOZ ARENAS", "dni": "15359596", "fecha_matricula": "Viernes 22 de Mayo de 2026", "fecha_inicio": "04/06/2026", "id_carnet": "15359596,211,7199", "curso": "SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7198", "nombre": "EVA GUADALUPE ARTEAGA LLANOS", "dni": "61085956", "fecha_matricula": "", "fecha_inicio": "25/05/2026", "id_carnet": "61085956,193,7198", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "LUNES - MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7206", "nombre": "CORTEZ GARCIA LUIS ANGEL", "dni": "45181110", "fecha_matricula": "", "fecha_inicio": "23/05/2026", "id_carnet": "45181110,203,7206", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7222", "nombre": "HUMPIRI COLQUIHUANCA ELVA MARTHA", "dni": "15347000", "fecha_matricula": "Martes 26 de Mayo de 2026", "fecha_inicio": "26/05/2026", "id_carnet": "15347000,114,7222", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "MARTES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7220", "nombre": "MARGOT HERMEREGILDA VERA RAMIREZ", "dni": "15429743", "fecha_matricula": "Martes 26 de Mayo de 2026", "fecha_inicio": "26/05/2026", "id_carnet": "15429743,176,7220", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "MARTES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7218", "nombre": "PATRICIA VILCAPOMA BERROCAL", "dni": "43115152", "fecha_matricula": "Martes 26 de Mayo de 2026", "fecha_inicio": "30/05/2026", "id_carnet": "43115152,200,7218", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7216", "nombre": "LORELEY ASIN OCHANTE", "dni": "46276694", "fecha_matricula": "Lunes 25 de Mayo de 2026", "fecha_inicio": "19/05/2026", "id_carnet": "46276694,176,7216", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "MARTES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7212", "nombre": "SERGIO EDUARDO MEDINA YAÑEZ", "dni": "76645438", "fecha_matricula": "Domingo 24 de Mayo de 2026", "fecha_inicio": "24/05/2026", "id_carnet": "76645438,186,7212", "curso": "CONSTRUCCIÓN E INSTALACIÓN EN DRYWALL Y CIELORRASO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7209", "nombre": "ROSALES PRUDENCIO JHON WILDER", "dni": "44663700", "fecha_matricula": "Sábado 23 de Mayo de 2026", "fecha_inicio": "23/05/2026", "id_carnet": "44663700,203,7209", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "7217", "nombre": "YENNHY CUZCANO CARBONERO", "dni": "45169331", "fecha_matricula": "", "fecha_inicio": "26/05/2026", "id_carnet": "45169331,114,7217", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "MARTES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7224", "nombre": "JOSE FORTUNATO VELEZ AYALA", "dni": "6576255", "fecha_matricula": "", "fecha_inicio": "04/06/2026", "id_carnet": "06576255,1,7224", "curso": "OFIMÁTICA EMPRESARIAL", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7210", "nombre": "HAKJAK NAOMY SÁNCHEZ PUMACAYO", "dni": "60525615", "fecha_matricula": "", "fecha_inicio": "31/05/2026", "id_carnet": "60525615,114,7210", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7228", "nombre": "SEBASTIÁN MARTÍN TASAYCO FARFÁN", "dni": "61309514", "fecha_matricula": "Jueves 28 de Mayo de 2026", "fecha_inicio": "04/06/2026", "id_carnet": "61309514,210,7228", "curso": "COMPUTACIÓN OFIMÁTICA", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7230", "nombre": "GABRIEL DE LA CRUZ LUPUCHE", "dni": "62051832", "fecha_matricula": "Jueves 28 de Mayo de 2026", "fecha_inicio": "30/05/2026", "id_carnet": "62051832,1,7230", "curso": "OFIMÁTICA EMPRESARIAL", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7229", "nombre": "SANCHEZ CASANOVA YESSENIA ELIZABETH", "dni": "40405925", "fecha_matricula": "", "fecha_inicio": "04/06/2026", "id_carnet": "40405925,211,7229", "curso": "SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6967", "nombre": "ESTER FERNANDA GUERRERO BERROCAL", "dni": "61389364", "fecha_matricula": "", "fecha_inicio": "21/03/2026", "id_carnet": "61389364,8,6967", "curso": "DISEÑO GRÁFICO PUBLICITARIO", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "REPOSICION DE TARJETA", "estado": "ENTREGADO"}, {"id": "7243", "nombre": "ROSA MARIA CARDENAS ADRIANO", "dni": "43362182", "fecha_matricula": "Martes 2 de Junio de 2026", "fecha_inicio": "29/05/2026", "id_carnet": "43362182,5,7243", "curso": "INYECTOTERAPIA Y ENFERMERÍA", "dia": "VIERNES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "7242", "nombre": "ELIANA RAQUEL PACHAS GUERRERO", "dni": "42294477", "fecha_matricula": "Martes 2 de Junio de 2026", "fecha_inicio": "02/06/2026", "id_carnet": "42294477,114,7242", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "MARTES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7240", "nombre": "JOSELYN ABURTO PONCE", "dni": "48647124", "fecha_matricula": "Lunes 1 de Junio de 2026", "fecha_inicio": "04/06/2026", "id_carnet": "48647124,211,7240", "curso": "SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7248", "nombre": "YANETT ALLCCA HUAMAN", "dni": "70769856", "fecha_matricula": "Miércoles 3 de Junio de 2026", "fecha_inicio": "05/06/2026", "id_carnet": "70769856,114,7248", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "VIERNES", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7221", "nombre": "VITALIANA REYES MANCHA", "dni": "73800376", "fecha_matricula": "", "fecha_inicio": "20/06/2026", "id_carnet": "73800376,243,7221", "curso": "DISEÑO GRÁFICO, MARKETING E IA", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7227", "nombre": "ESTELA YANAPA QUISPE", "dni": "46817937", "fecha_matricula": "Jueves 28 de Mayo de 2026", "fecha_inicio": "19/06/2026", "id_carnet": "46817937,5,7227", "curso": "INYECTOTERAPIA Y ENFERMERÍA", "dia": "VIERNES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7241", "nombre": "DANIEL ENRIQUE NARVÁEZ ESCOBAR", "dni": "6057303", "fecha_matricula": "Lunes 1 de Junio de 2026", "fecha_inicio": "28/06/2026", "id_carnet": "006057303,186,7241", "curso": "CONSTRUCCIÓN E INSTALACIÓN EN DRYWALL Y CIELORRASO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "TARJETA CREADA"}, {"id": "7236", "nombre": "DAYANA GUADALUPE AVALOS CASTAÑEDA", "dni": "74144102", "fecha_matricula": "Domingo 31 de Mayo de 2026", "fecha_inicio": "19/06/2026", "id_carnet": "74144102,5,7236", "curso": "INYECTOTERAPIA Y ENFERMERÍA", "dia": "VIERNES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7235", "nombre": "YENNY XIOMARA RODRIGUEZ AGUILAR", "dni": "10684177", "fecha_matricula": "Sábado 30 de Mayo de 2026", "fecha_inicio": "19/06/2026", "id_carnet": "10684177,5,7235", "curso": "INYECTOTERAPIA Y ENFERMERÍA", "dia": "VIERNES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7249", "nombre": "EDISON FARID ROJAS PALOMINO", "dni": "61443791", "fecha_matricula": "", "fecha_inicio": "20/06/2026", "id_carnet": "61443791,190,7249", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "02:00pm - 04:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6423", "nombre": "JANNA YOANA MORALES CASTILLO", "dni": "62129631", "fecha_matricula": "", "fecha_inicio": "15/12/2025", "id_carnet": "62129631,193,6423", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "LUNES - JUEVES", "turno": "TARDE", "horario": "03:00pm - 05:30pm", "situacion": "REPOSICION DE TARJETA", "estado": "ENTREGADO"}, {"id": "7253", "nombre": "MIRIAM SILVANA ROJAS HUAPAYA", "dni": "47412829", "fecha_matricula": "Viernes 5 de Junio de 2026", "fecha_inicio": "13/06/2026", "id_carnet": "47412829,203,7253", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7252", "nombre": "MELISSA CERNA MITMA", "dni": "43308947", "fecha_matricula": "Jueves 4 de Junio de 2026", "fecha_inicio": "10/06/2026", "id_carnet": "43308947,210,7252", "curso": "COMPUTACIÓN OFIMÁTICA", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7154", "nombre": "CELINDA JENIFFER JANAMPA ANCHAYHUA", "dni": "74995996", "fecha_matricula": "", "fecha_inicio": "14/06/2026", "id_carnet": "74995996,193,7154", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 01:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7180", "nombre": "ADRIANA ELOYSA ATOCCSA SANCHEZ", "dni": "63080744", "fecha_matricula": "Domingo 17 de Mayo de 2026", "fecha_inicio": "30/05/2026", "id_carnet": "63080744,202,7180", "curso": "FISIOTERAPIA, MASOTERAPIA Y REHABILITACIÓN", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7191", "nombre": "YAMILETH FLORIAN CALAGUA", "dni": "60618571", "fecha_matricula": "Miércoles 20 de Mayo de 2026", "fecha_inicio": "30/05/2026", "id_carnet": "60618571,202,7191", "curso": "FISIOTERAPIA, MASOTERAPIA Y REHABILITACIÓN", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7189", "nombre": "QUISPE CARDENAS BRENDA JACKELINE", "dni": "62274735", "fecha_matricula": "", "fecha_inicio": "06/06/2026", "id_carnet": "62274735,176,7189", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7205", "nombre": "ORTEGA LABRADOR JAVIER ALEXANDER", "dni": "30409497", "fecha_matricula": "Sábado 23 de Mayo de 2026", "fecha_inicio": "30/05/2026", "id_carnet": "30409497,1,7205", "curso": "OFIMÁTICA EMPRESARIAL", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7204", "nombre": "ROSARIO MILAGROS VARGAS PEREZ", "dni": "15429368", "fecha_matricula": "Sábado 23 de Mayo de 2026", "fecha_inicio": "06/06/2026", "id_carnet": "15429368,182,7204", "curso": "PODOLOGÍA", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7207", "nombre": "LUCERO GISELA ROSAS VIVAS", "dni": "62734489", "fecha_matricula": "", "fecha_inicio": "06/06/2026", "id_carnet": "62734489,176,7207", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7213", "nombre": "ANAMILE MILAGROS LEON LEON", "dni": "62576216", "fecha_matricula": "", "fecha_inicio": "06/06/2026", "id_carnet": "62576216,176,7213", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7223", "nombre": "HUMPIRI COLQUIHUANCA ELVA MARTHA", "dni": "15347000", "fecha_matricula": "", "fecha_inicio": "06/06/2026", "id_carnet": "15347000,176,7223", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7225", "nombre": "DORIS QUISPE PALOMINO", "dni": "15421454", "fecha_matricula": "Miércoles 27 de Mayo de 2026", "fecha_inicio": "06/06/2026", "id_carnet": "15421454,182,7225", "curso": "PODOLOGÍA", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7232", "nombre": "AMAYRANI DE LA CRUZ CARPIO", "dni": "76079791", "fecha_matricula": "Viernes 29 de Mayo de 2026", "fecha_inicio": "30/05/2026", "id_carnet": "76079791,200,7232", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7231", "nombre": "SEBASTIAN JOSEPH SAAVEDRA TORREJÓN", "dni": "62962856", "fecha_matricula": "", "fecha_inicio": "06/06/2026", "id_carnet": "62962856,176,7231", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7233", "nombre": "REYNA SERNAQUE JANINE ANAI", "dni": "63202505", "fecha_matricula": "Sábado 30 de Mayo de 2026", "fecha_inicio": "14/06/2026", "id_carnet": "63202505,193,7233", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 01:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7234", "nombre": "MARIA DEL PILAR GONZALES CASAS", "dni": "15430115", "fecha_matricula": "Sábado 30 de Mayo de 2026", "fecha_inicio": "13/06/2026", "id_carnet": "15430115,203,7234", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "6895", "nombre": "MELANY JASMIN QUINTANA HUAMAN", "dni": "62655733", "fecha_matricula": "", "fecha_inicio": "08/03/2026", "id_carnet": "62655733,114,6895", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "REPOSICION DE TARJETA", "estado": "ENTREGADO"}, {"id": "7245", "nombre": "CARMENROSA MELENDEZ AMESQUITA", "dni": "15452947", "fecha_matricula": "Martes 2 de Junio de 2026", "fecha_inicio": "06/06/2026", "id_carnet": "15452947,176,7245", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7239", "nombre": "EVELIN CHÁVEZ QUIROZ", "dni": "45384151", "fecha_matricula": "Lunes 1 de Junio de 2026", "fecha_inicio": "06/06/2026", "id_carnet": "45384151,200,7239", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7244", "nombre": "ROSA MARIA CARDENAS ADRIANO", "dni": "43362182", "fecha_matricula": "", "fecha_inicio": "06/06/2026", "id_carnet": "43362182,182,7244", "curso": "PODOLOGÍA", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7238", "nombre": "SHIRLEY REMISIÓN CHUMPITAZ", "dni": "61869218", "fecha_matricula": "Sábado 6 de Junio de 2026", "fecha_inicio": "06/06/2026", "id_carnet": "61869218,176,7238", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7257", "nombre": "DAND JHONATAN VILCAPUMA RIVERA", "dni": "61525992", "fecha_matricula": "Sábado 6 de Junio de 2026", "fecha_inicio": "28/06/2026", "id_carnet": "61525992,186,7257", "curso": "CONSTRUCCIÓN E INSTALACIÓN EN DRYWALL Y CIELORRASO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7255", "nombre": "NICOLAS BONATTO CHUMPITAZ", "dni": "62576285", "fecha_matricula": "Sábado 6 de Junio de 2026", "fecha_inicio": "06/06/2026", "id_carnet": "62576285,210,7255", "curso": "COMPUTACIÓN OFIMÁTICA", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7256", "nombre": "KARINA ELIZABETH YALLICO CHUMBE", "dni": "40348280", "fecha_matricula": "", "fecha_inicio": "06/06/2026", "id_carnet": "40348280,200,7256", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7262", "nombre": "MADELEINE MIDGE GARY AGUADO", "dni": "40175399", "fecha_matricula": "Sábado 6 de Junio de 2026", "fecha_inicio": "06/06/2026", "id_carnet": "40175399,200,7262", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7260", "nombre": "MARTINEZ CONDORI ELISABET AURORA", "dni": "15349548", "fecha_matricula": "", "fecha_inicio": "10/06/2026", "id_carnet": "15349548,210,7260", "curso": "COMPUTACIÓN OFIMÁTICA", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7258", "nombre": "JENNIFER LUCERO AYALA OCHANTE", "dni": "79841017", "fecha_matricula": "", "fecha_inicio": "19/06/2026", "id_carnet": "79841017,182,7258", "curso": "PODOLOGÍA", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7254", "nombre": "DIEGO ARMANDO LEVANO GALLARDO", "dni": "62734735", "fecha_matricula": "", "fecha_inicio": "06/06/2026", "id_carnet": "62734735,202,7254", "curso": "FISIOTERAPIA, MASOTERAPIA Y REHABILITACIÓN", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7265", "nombre": "MARISA RUTH YAYA CHUMPITAZ", "dni": "15408024", "fecha_matricula": "Martes 9 de Junio de 2026", "fecha_inicio": "06/06/2026", "id_carnet": "15408024,182,7265", "curso": "PODOLOGÍA", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "7264", "nombre": "MARIA FERNANDA MANRIQUE ALAN", "dni": "61389773", "fecha_matricula": "Sábado 6 de Junio de 2026", "fecha_inicio": "22/06/2026", "id_carnet": "61389773,193,7264", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "LUNES - MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7263", "nombre": "ELIO NIEL DE LOS MARES VICENTE QUIROZ", "dni": "61648478", "fecha_matricula": "Domingo 7 de Junio de 2026", "fecha_inicio": "28/06/2026", "id_carnet": "61648478,190,7263", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "02:00pm - 04:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7267", "nombre": "ARIANA JAMILETH SANCHEZ RAMOS", "dni": "61389586", "fecha_matricula": "Miércoles 10 de Junio de 2026", "fecha_inicio": "11/06/2026", "id_carnet": "61389586,210,7267", "curso": "COMPUTACIÓN OFIMÁTICA", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7268", "nombre": "JOHANNA YAMILE CUBAS FARFAN", "dni": "76542372", "fecha_matricula": "", "fecha_inicio": "20/06/2026", "id_carnet": "76542372,243,7268", "curso": "DISEÑO GRÁFICO, MARKETING E IA", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7269", "nombre": "JHON EMERZON ZENITAGOYA AUQUI", "dni": "47002557", "fecha_matricula": "Jueves 11 de Junio de 2026", "fecha_inicio": "14/06/2026", "id_carnet": "47002557,113,7269", "curso": "REPARACIÓN DE CELULARES Y TABLETS", "dia": "DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7271", "nombre": "GIOVANI AARON QUISPE HUACAUSI", "dni": "77863557", "fecha_matricula": "Jueves 11 de Junio de 2026", "fecha_inicio": "20/06/2026", "id_carnet": "77863557,190,7271", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "02:00pm - 04:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7270", "nombre": "BLANCA LUZ PACHAS CARBAJAL", "dni": "40764322", "fecha_matricula": "Jueves 11 de Junio de 2026", "fecha_inicio": "12/06/2026", "id_carnet": "40764322,114,7270", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "VIERNES", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7274", "nombre": "MARILIN KENIA CASAS HUARI", "dni": "71718941", "fecha_matricula": "Viernes 12 de Junio de 2026", "fecha_inicio": "13/06/2026", "id_carnet": "71718941,236,7274", "curso": "UÑAS ACRÍLICAS", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7273", "nombre": "CARLOS ALBERTO TASAYCO CANCHARI", "dni": "45155919", "fecha_matricula": "Jueves 11 de Junio de 2026", "fecha_inicio": "13/06/2026", "id_carnet": "45155919,203,7273", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7272", "nombre": "ELVA MIRIAM CHAMORRO CORONEL", "dni": "45923441", "fecha_matricula": "", "fecha_inicio": "12/06/2026", "id_carnet": "45923441,236,7272", "curso": "UÑAS ACRÍLICAS", "dia": "VIERNES", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7277", "nombre": "MISAEL CHANCASANAMPA SUYURI", "dni": "80062361", "fecha_matricula": "Sábado 13 de Junio de 2026", "fecha_inicio": "13/06/2026", "id_carnet": "80062361,4,7277", "curso": "EXCEL EMPRESARIAL", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7281", "nombre": "ALEX FLORES QUISPE", "dni": "61249320", "fecha_matricula": "", "fecha_inicio": "20/06/2026", "id_carnet": "61249320,4,7281", "curso": "EXCEL EMPRESARIAL", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7004", "nombre": "KASUMY JULIET GOMEZ RAMOS", "dni": "62877381", "fecha_matricula": "", "fecha_inicio": "04/04/2026", "id_carnet": "62877381,4,7004", "curso": "EXCEL EMPRESARIAL", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "REPOSICION DE TARJETA", "estado": "ENTREGADO"}, {"id": "7275", "nombre": "DORA AVIGAIL RÍOS TUANAMA", "dni": "63173479", "fecha_matricula": "", "fecha_inicio": "22/06/2026", "id_carnet": "63173479,193,7275", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "LUNES - MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7278", "nombre": "RUTH DAYSI ALDAMA VILCAPOMA", "dni": "76083414", "fecha_matricula": "Sábado 13 de Junio de 2026", "fecha_inicio": "22/06/2026", "id_carnet": "76083414,193,7278", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "LUNES - MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7276", "nombre": "ANGELA MAGDALENA ARMAS DE LA CRUZ", "dni": "45338735", "fecha_matricula": "Viernes 12 de Junio de 2026", "fecha_inicio": "13/06/2026", "id_carnet": "45338735,200,7276", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7279", "nombre": "JHOLVI GABRIEL VASQUEZ HUAMAN", "dni": "60852433", "fecha_matricula": "Sábado 13 de Junio de 2026", "fecha_inicio": "14/06/2026", "id_carnet": "60852433,159,7279", "curso": "COMPUTACIÓN CERO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7282", "nombre": "LIDIA ARBIZU CULLANCO", "dni": "15421688", "fecha_matricula": "", "fecha_inicio": "14/06/2026", "id_carnet": "15421688,159,7282", "curso": "COMPUTACIÓN CERO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7114", "nombre": "VICERREL RIOS CARLOS ANDRES", "dni": "72874446", "fecha_matricula": "", "fecha_inicio": "26/04/2026", "id_carnet": "72874446,113,7114", "curso": "REPARACIÓN DE CELULARES Y TABLETS", "dia": "DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "REPOSICION DE TARJETA", "estado": "ENTREGADO"}, {"id": "7287", "nombre": "ASUMI JIMENA MARCOS FRANCIA", "dni": "61648444", "fecha_matricula": "Miércoles 17 de Junio de 2026", "fecha_inicio": "04/07/2026", "id_carnet": "61648444,176,7287", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7285", "nombre": "ENRIQUE JARPE SANCHEZ", "dni": "40707949", "fecha_matricula": "Lunes 15 de Junio de 2026", "fecha_inicio": "20/06/2026", "id_carnet": "40707949,203,7285", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7284", "nombre": "JUANA JUDITH CAMELLO ANGULO", "dni": "48386019", "fecha_matricula": "Sábado 13 de Junio de 2026", "fecha_inicio": "27/06/2026", "id_carnet": "48386019,200,7284", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7283", "nombre": "ROEL YSAC CERAZO HUARACA", "dni": "42670899", "fecha_matricula": "Sábado 13 de Junio de 2026", "fecha_inicio": "20/06/2026", "id_carnet": "42670899,4,7283", "curso": "EXCEL EMPRESARIAL", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7286", "nombre": "BRAYAN DELPIERO LEVANO GALLARDO", "dni": "73730262", "fecha_matricula": "", "fecha_inicio": "17/06/2026", "id_carnet": "73730262,202,7286", "curso": "FISIOTERAPIA, MASOTERAPIA Y REHABILITACIÓN", "dia": "MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7088", "nombre": "SEBASTIAN FABIANO CARHUAS FLORES", "dni": "62051917", "fecha_matricula": "Sábado 18 de Abril de 2026", "fecha_inicio": "19/04/2026", "id_carnet": "62051917,190,7088", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "REPOSICION DE TARJETA", "estado": "ENTREGADO"}, {"id": "7292", "nombre": "MAYUMI ALDAMA GUERRA", "dni": "76797460", "fecha_matricula": "Viernes 19 de Junio de 2026", "fecha_inicio": "19/06/2026", "id_carnet": "76797460,5,7292", "curso": "INYECTOTERAPIA Y ENFERMERÍA", "dia": "VIERNES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "7293", "nombre": "CARLOS ALBERTO PUZARI HUARI", "dni": "44052313", "fecha_matricula": "Viernes 19 de Junio de 2026", "fecha_inicio": "28/06/2026", "id_carnet": "44052313,186,7293", "curso": "CONSTRUCCIÓN E INSTALACIÓN EN DRYWALL Y CIELORRASO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7291", "nombre": "MARIA GUADALUPE GODOY PISCO", "dni": "74366070", "fecha_matricula": "Viernes 19 de Junio de 2026", "fecha_inicio": "24/06/2026", "id_carnet": "74366070,210,7291", "curso": "COMPUTACIÓN OFIMÁTICA", "dia": "MIERCOLES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7290", "nombre": "KATHY BENITES CARHUAS", "dni": "76951532", "fecha_matricula": "Viernes 19 de Junio de 2026", "fecha_inicio": "19/06/2026", "id_carnet": "76951532,4,7290", "curso": "EXCEL EMPRESARIAL", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7289", "nombre": "ANYELI ROSSANA MATOS RUIZ", "dni": "76522066", "fecha_matricula": "", "fecha_inicio": "19/06/2026", "id_carnet": "76522066,5,7289", "curso": "INYECTOTERAPIA Y ENFERMERÍA", "dia": "VIERNES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7294", "nombre": "DIXON ALBEYRO CAYCAY PINO", "dni": "61779502", "fecha_matricula": "Sábado 20 de Junio de 2026", "fecha_inicio": "20/06/2026", "id_carnet": "61779502,203,7294", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7226", "nombre": "JUAN JUNIOR RAMOS GARCIA", "dni": "77167808", "fecha_matricula": "Sábado 7 de Marzo de 2026", "fecha_inicio": "12/06/2026", "id_carnet": "77167808,4,7226", "curso": "EXCEL EMPRESARIAL", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7295", "nombre": "CALAGUA ZAVALA CARMEN MARIA", "dni": "47063057", "fecha_matricula": "", "fecha_inicio": "19/06/2026", "id_carnet": "47063057,5,7295", "curso": "INYECTOTERAPIA Y ENFERMERÍA", "dia": "VIERNES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "7308", "nombre": "IVANNA CORTEZ PALOMINO", "dni": "45007428", "fecha_matricula": "Miércoles 24 de Junio de 2026", "fecha_inicio": "28/06/2026", "id_carnet": "45007428,211,7308", "curso": "SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7307", "nombre": "MARIA ANGELICA SANCHEZ ORMEÑO", "dni": "15410308", "fecha_matricula": "Miércoles 24 de Junio de 2026", "fecha_inicio": "25/06/2026", "id_carnet": "15410308,211,7307", "curso": "SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7306", "nombre": "HERBERT ESSENWANGER MANFRED BANDA", "dni": "22062026", "fecha_matricula": "Lunes 22 de Junio de 2026", "fecha_inicio": "28/06/2026", "id_carnet": "22062026,190,7306", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "02:00pm - 04:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7304", "nombre": "ANTONY ENRIQUE LOPEZ MENDOZA", "dni": "45421570", "fecha_matricula": "Lunes 22 de Junio de 2026", "fecha_inicio": "20/06/2026", "id_carnet": "45421570,243,7304", "curso": "DISEÑO GRÁFICO, MARKETING E IA", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "7303", "nombre": "IBETT KARINA DAMIANO SALAS", "dni": "47871309", "fecha_matricula": "Lunes 22 de Junio de 2026", "fecha_inicio": "14/06/2026", "id_carnet": "47871309,193,7303", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 01:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "ENTREGADO"}, {"id": "7302", "nombre": "ABNER TORRES TARICUARIMA", "dni": "44864232", "fecha_matricula": "Lunes 22 de Junio de 2026", "fecha_inicio": "28/06/2026", "id_carnet": "44864232,186,7302", "curso": "CONSTRUCCIÓN E INSTALACIÓN EN DRYWALL Y CIELORRASO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7301", "nombre": "GLORIA AMANDA ORQUIZO ROJO", "dni": "21530916", "fecha_matricula": "Lunes 22 de Junio de 2026", "fecha_inicio": "27/06/2026", "id_carnet": "21530916,200,7301", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7300", "nombre": "FÁTIMA MARICIELO OCHOA SALCEDO", "dni": "60517715", "fecha_matricula": "Domingo 21 de Junio de 2026", "fecha_inicio": "23/06/2026", "id_carnet": "60517715,114,7300", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "MARTES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7299", "nombre": "MILENNE EMILIA QUISPE HUAMAN", "dni": "61514368", "fecha_matricula": "Domingo 21 de Junio de 2026", "fecha_inicio": "22/06/2026", "id_carnet": "61514368,193,7299", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "LUNES - JUEVES", "turno": "TARDE", "horario": "03:00pm - 05:30pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7298", "nombre": "EMMY ELENA CANDELA MENESES", "dni": "60077534", "fecha_matricula": "Domingo 21 de Junio de 2026", "fecha_inicio": "26/06/2026", "id_carnet": "60077534,114,7298", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "VIERNES", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7296", "nombre": "MIGUEL ÁNGEL RODRÍGUEZ MEJÍA", "dni": "41767777", "fecha_matricula": "Sábado 20 de Junio de 2026", "fecha_inicio": "27/06/2026", "id_carnet": "41767777,203,7296", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "TARJETA CREADA"}, {"id": "7305", "nombre": "MORAN PAMPAS YEMLU ROSANGELA", "dni": "72289796", "fecha_matricula": "", "fecha_inicio": "04/07/2026", "id_carnet": "72289796,176,7305", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7309", "nombre": "ROYER ARTURO RODRIGUEZ FLORES", "dni": "47016766", "fecha_matricula": "Sábado 27 de Junio de 2026", "fecha_inicio": "28/06/2026", "id_carnet": "47016766,186,7309", "curso": "CONSTRUCCIÓN E INSTALACIÓN EN DRYWALL Y CIELORRASO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7310", "nombre": "SANTOS GIRON JUAN PABLO", "dni": "75449656", "fecha_matricula": "", "fecha_inicio": "28/06/2026", "id_carnet": "75449656,113,7310", "curso": "REPARACIÓN DE CELULARES Y TABLETS", "dia": "DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7311", "nombre": "BRANLY LORENZO CAMPANA PONCE", "dni": "46670797", "fecha_matricula": "", "fecha_inicio": "28/06/2026", "id_carnet": "46670797,186,7311", "curso": "CONSTRUCCIÓN E INSTALACIÓN EN DRYWALL Y CIELORRASO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7312", "nombre": "DEYANIRA CRISTINA PERALTA PACHECO", "dni": "74237379", "fecha_matricula": "Sábado 27 de Junio de 2026", "fecha_inicio": "27/06/2026", "id_carnet": "74237379,200,7312", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7203", "nombre": "ARIANNA DE LOS ANGELES DE LA CRUZ REAÑO", "dni": "63202412", "fecha_matricula": "", "fecha_inicio": "23/05/2026", "id_carnet": "63202412,8,7203", "curso": "DISEÑO GRÁFICO PUBLICITARIO", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "REPOSICION DE TARJETA", "estado": "ENTREGADO"}, {"id": "7314", "nombre": "JUAN ANDERSON CUCHO VENTURO", "dni": "62280615", "fecha_matricula": "Domingo 28 de Junio de 2026", "fecha_inicio": "05/07/2026", "id_carnet": "62280615,190,7314", "curso": "BARBERIA PROFESIONAL", "dia": "SABADO - DOMINGO", "turno": "TARDE", "horario": "04:00pm - 06:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7313", "nombre": "ANDERSON MUÑICO LUCANA", "dni": "61525788", "fecha_matricula": "Domingo 28 de Junio de 2026", "fecha_inicio": "28/06/2026", "id_carnet": "61525788,113,7313", "curso": "REPARACIÓN DE CELULARES Y TABLETS", "dia": "DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7320", "nombre": "JEFFERSON CURI LANDA", "dni": "60048935", "fecha_matricula": "Martes 30 de Junio de 2026", "fecha_inicio": "05/07/2026", "id_carnet": "60048935,113,7320", "curso": "REPARACIÓN DE CELULARES Y TABLETS", "dia": "DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7319", "nombre": "ROBERTO EDUARDO VERASTEGUI MOLLEDA", "dni": "70782035", "fecha_matricula": "Miércoles 1 de Julio de 2026", "fecha_inicio": "18/07/2026", "id_carnet": "70782035,203,7319", "curso": "DISEÑO Y ARMADO DE MELAMINA", "dia": "SABADO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "FALTA CREAR"}, {"id": "7318", "nombre": "GABY SOLEDAD CALDERON CESAR", "dni": "72216133", "fecha_matricula": "Miércoles 1 de Julio de 2026", "fecha_inicio": "12/07/2026", "id_carnet": "72216133,193,7318", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 01:00pm", "situacion": "ALUMNO NUEVO", "estado": "TARJETA CREADA"}, {"id": "7317", "nombre": "JAIME QUISPE SUAZNABAR", "dni": "47252111", "fecha_matricula": "Miércoles 1 de Julio de 2026", "fecha_inicio": "05/07/2026", "id_carnet": "47252111,186,7317", "curso": "CONSTRUCCIÓN E INSTALACIÓN EN DRYWALL Y CIELORRASO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7316", "nombre": "SARA VALENTINA JANAMPA YAURI", "dni": "62962558", "fecha_matricula": "Lunes 29 de Junio de 2026", "fecha_inicio": "18/07/2026", "id_carnet": "62962558,193,7316", "curso": "COSMETOLOGÍA PROFESIONAL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 01:00pm", "situacion": "ALUMNO NUEVO", "estado": "TARJETA CREADA"}, {"id": "7315", "nombre": "GUISELLA TORRES DAMIAN", "dni": "72862476", "fecha_matricula": "Lunes 29 de Junio de 2026", "fecha_inicio": "05/07/2026", "id_carnet": "72862476,114,7315", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7322", "nombre": "EVA YANETTE ZEVALLOS SAIHUA", "dni": "15436321", "fecha_matricula": "Jueves 2 de Julio de 2026", "fecha_inicio": "05/07/2026", "id_carnet": "15436321,211,7322", "curso": "SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7321", "nombre": "ADA NOLBERTA ICHACAYA RAMÍREZ", "dni": "7159767", "fecha_matricula": "Jueves 2 de Julio de 2026", "fecha_inicio": "04/07/2026", "id_carnet": "07159767,182,7321", "curso": "PODOLOGÍA", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7327", "nombre": "ERICK RUEDA CHUMPITAZ", "dni": "47470596", "fecha_matricula": "Viernes 3 de Julio de 2026", "fecha_inicio": "05/07/2026", "id_carnet": "47470596,186,7327", "curso": "CONSTRUCCIÓN E INSTALACIÓN EN DRYWALL Y CIELORRASO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7325", "nombre": "JENSEN JOSUÉ IGNACIO VILCA", "dni": "47973974", "fecha_matricula": "Viernes 3 de Julio de 2026", "fecha_inicio": "05/07/2026", "id_carnet": "47973974,113,7325", "curso": "REPARACIÓN DE CELULARES Y TABLETS", "dia": "DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7328", "nombre": "FANNY MARIBEL NAPÁN HILARES", "dni": "74309484", "fecha_matricula": "", "fecha_inicio": "05/07/2026", "id_carnet": "74309484,114,7328", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7324", "nombre": "SARA VALENTINA JANAMPA YAURI", "dni": "62962558", "fecha_matricula": "", "fecha_inicio": "11/07/2026", "id_carnet": "62962558,236,7324", "curso": "UÑAS ACRÍLICAS", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "TARJETA CREADA"}, {"id": "7323", "nombre": "MARIA MANCHA ROMO", "dni": "76536485", "fecha_matricula": "", "fecha_inicio": "04/07/2026", "id_carnet": "76536485,176,7323", "curso": "DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7326", "nombre": "VALLEJOS VICENTE KELLY PAOLA", "dni": "43502157", "fecha_matricula": "", "fecha_inicio": "05/07/2026", "id_carnet": "43502157,211,7326", "curso": "SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7329", "nombre": "EDUGARDO PISCO GONZALES", "dni": "15413157", "fecha_matricula": "", "fecha_inicio": "05/07/2026", "id_carnet": "15413157,186,7329", "curso": "CONSTRUCCIÓN E INSTALACIÓN EN DRYWALL Y CIELORRASO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7331", "nombre": "SORELY LIZET PERALES MANRIQUE", "dni": "62051957", "fecha_matricula": "", "fecha_inicio": "05/07/2026", "id_carnet": "62051957,7,7331", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "TARJETA CREADA"}, {"id": "7332", "nombre": "LEONARDO DANIEL AUDANTE YAURI", "dni": "62492567", "fecha_matricula": "Domingo 5 de Julio de 2026", "fecha_inicio": "17/07/2026", "id_carnet": "62492567,5,7332", "curso": "INYECTOTERAPIA Y ENFERMERÍA", "dia": "VIERNES", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "FALTA CREAR"}, {"id": "7330", "nombre": "JUAN FLORES REYES", "dni": "76093198", "fecha_matricula": "", "fecha_inicio": "05/07/2026", "id_carnet": "76093198,113,7330", "curso": "REPARACIÓN DE CELULARES Y TABLETS", "dia": "DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7336", "nombre": "SOFÍA COSIATADO VENTURO", "dni": "47064332", "fecha_matricula": "Martes 7 de Julio de 2026", "fecha_inicio": "12/07/2026", "id_carnet": "47064332,114,7336", "curso": "REPOSTERÍA Y PASTELERÍA", "dia": "DOMINGO", "turno": "TARDE", "horario": "02:00pm - 05:00pm", "situacion": "ALUMNO NUEVO", "estado": "TARJETA CREADA"}, {"id": "7335", "nombre": "ARIANA ANADALY SOTO TARAZONA", "dni": "60471764", "fecha_matricula": "Martes 7 de Julio de 2026", "fecha_inicio": "05/07/2026", "id_carnet": "60471764,7,7335", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "TARJETA CREADA"}, {"id": "7333", "nombre": "PINARES VARGAS EVELYN", "dni": "61486965", "fecha_matricula": "Lunes 6 de Julio de 2026", "fecha_inicio": "11/07/2026", "id_carnet": "61486965,200,7333", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "TARJETA CREADA"}, {"id": "7334", "nombre": "ARANGURI CANDELA MARIA BELEN", "dni": "76272201", "fecha_matricula": "", "fecha_inicio": "11/07/2026", "id_carnet": "76272201,210,7334", "curso": "COMPUTACIÓN OFIMÁTICA", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "TARJETA CREADA"}, {"id": "7343", "nombre": "GABRIEL ALBERTH PEREZ ROJAS", "dni": "62576189", "fecha_matricula": "Viernes 10 de Julio de 2026", "fecha_inicio": "17/07/2026", "id_carnet": "62576189,4,7343", "curso": "EXCEL EMPRESARIAL", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "FALTA CREAR"}, {"id": "7344", "nombre": "CESAR AGUSTO VILLANUEVA SÁNCHEZ", "dni": "75080812", "fecha_matricula": "Viernes 10 de Julio de 2026", "fecha_inicio": "05/07/2026", "id_carnet": "75080812,7,7344", "curso": "CAJERO BANCARIO Y COMERCIAL", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO INCORPORADO", "estado": "TARJETA CREADA"}, {"id": "7342", "nombre": "NICOL DAYANA VALDEZ MAYTA", "dni": "61647602", "fecha_matricula": "Viernes 10 de Julio de 2026", "fecha_inicio": "11/07/2026", "id_carnet": "61647602,200,7342", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "TARJETA CREADA"}, {"id": "7341", "nombre": "CARINES ALEXANDRA PACHERRES AYO", "dni": "73828707", "fecha_matricula": "Viernes 10 de Julio de 2026", "fecha_inicio": "11/07/2026", "id_carnet": "73828707,200,7341", "curso": "DECORACIÓN DE GLOBOS", "dia": "SABADO", "turno": "NOCHE", "horario": "05:00pm - 08:00pm", "situacion": "ALUMNO NUEVO", "estado": "TARJETA CREADA"}, {"id": "7340", "nombre": "DAVID CAYCHO MANCO", "dni": "76651339", "fecha_matricula": "Viernes 10 de Julio de 2026", "fecha_inicio": "26/07/2026", "id_carnet": "76651339,186,7340", "curso": "CONSTRUCCIÓN E INSTALACIÓN EN DRYWALL Y CIELORRASO", "dia": "DOMINGO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "FALTA CREAR"}, {"id": "7339", "nombre": "EVELYN FIORELLA RODRIGUEZ ARMUTO", "dni": "48319114", "fecha_matricula": "Jueves 9 de Julio de 2026", "fecha_inicio": "17/07/2026", "id_carnet": "48319114,182,7339", "curso": "PODOLOGÍA", "dia": "VIERNES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "FALTA CREAR"}, {"id": "7337", "nombre": "CELINDA ANDIA DE LA CRUZ", "dni": "15449795", "fecha_matricula": "Miércoles 8 de Julio de 2026", "fecha_inicio": "01/08/2026", "id_carnet": "15449795,202,7337", "curso": "FISIOTERAPIA, MASOTERAPIA Y REHABILITACIÓN", "dia": "SABADO", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "ALUMNO NUEVO", "estado": "FALTA CREAR"}, {"id": "7338", "nombre": "YESSICA ISABEL ROQUE ORTEGA", "dni": "75826539", "fecha_matricula": "", "fecha_inicio": "09/07/2026", "id_carnet": "75826539,211,7338", "curso": "SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL", "dia": "JUEVES", "turno": "NOCHE", "horario": "06:00pm - 09:00pm", "situacion": "ALUMNO NUEVO", "estado": "ENTREGADO"}, {"id": "7028", "nombre": "FERNÁNDEZ MONTERO SHARLOOK MICHEL", "dni": "7191101", "fecha_matricula": "", "fecha_inicio": "10/04/2026", "id_carnet": "007191101,236,7028", "curso": "UÑAS ACRÍLICAS", "dia": "VIERNES", "turno": "MAÑANA", "horario": "09:00am - 12:00pm", "situacion": "REPOSICION DE TARJETA", "estado": "TARJETA CREADA"}];
- 
+
   const STORAGE_KEY = 'carnetsQR_data_v1';
   try{
     const saved = localStorage.getItem(STORAGE_KEY);
@@ -623,7 +623,7 @@
       if(Array.isArray(parsed) && parsed.length) rows = parsed;
     }
   }catch(e){ console.warn('No se pudo cargar el guardado local', e); }
- 
+
   // asegurar que todos los registros (incluidos los originales) tengan el campo observación
   rows.forEach(r=>{
     if(r.observacion === undefined) r.observacion = '';
@@ -632,7 +632,7 @@
     if(r.tipo_inscripcion === undefined) r.tipo_inscripcion = 'CURSO';
     if(r.modalidad === undefined) r.modalidad = 'PRESENCIAL';
   });
- 
+
   // ---------- Deshacer (Ctrl+Z): guarda una foto de los datos antes de cada cambio ----------
   let undoStack = [];
   const MAX_UNDO = 30;
@@ -659,7 +659,7 @@
       performUndo();
     }
   });
- 
+
   const bodyRows = document.getElementById('bodyRows');
   const rowCount = document.getElementById('rowCount');
   const totalCount = document.getElementById('totalCount');
@@ -669,7 +669,7 @@
   const autosaveIndicator = document.getElementById('autosaveIndicator');
   let groupEstado = null; // null = ver todos | 'FALTA CREAR' | 'TARJETA CREADA' | 'ENTREGADO'
   let groupTipo = null; // null = ver todos | 'CURSO' | 'TALLER' | 'PRESENCIAL' | 'VIRTUAL'
- 
+
   // ---------- Modal para agregar nuevas opciones (Curso, Día, Horario) ----------
   // No depende de prompt() nativo: algunos navegadores embebidos (apps de chat, WebView)
   // bloquean los diálogos nativos y eso impedía que "+ Agregar nuevo…" funcionara.
@@ -678,7 +678,7 @@
   const addOptionInput = document.getElementById('addOptionInput');
   let addOptionCallback = null;
   let addOptionField = null;
- 
+
   // Formatea automáticamente lo escrito para que quede como las demás opciones
   // de Horario: "09:00am - 12:00pm" (hh:mm + am/pm, guion, hh:mm + am/pm)
   function formatHorarioInput(raw){
@@ -695,7 +695,7 @@
     let min1  = clamp2(chars.slice(2,4).join(''), 0, 59);
     let hour2 = clamp2(chars.slice(5,7).join(''), 1, 12);
     let min2  = clamp2(chars.slice(7,9).join(''), 0, 59);
- 
+
     let out = hour1;
     if(chars.length >= 3) out += ':' + min1;
     if(chars.length >= 5) out += chars[4] + 'm';
@@ -704,7 +704,7 @@
     if(chars.length >= 10) out += chars[9] + 'm';
     return out;
   }
- 
+
   function showAddOptionModal(field, onConfirm, initialValue){
     const labels = { curso: 'CURSO', dia: 'DÍA', horario: 'HORARIO' };
     const isEdit = initialValue !== undefined && initialValue !== null;
@@ -742,14 +742,14 @@
     if(e.key === 'Enter'){ document.getElementById('addOptionSave').click(); }
     if(e.key === 'Escape'){ resolveAddOptionModal(null); }
   });
- 
+
   // ---------- Menú contextual (clic derecho) para editar/eliminar la opción actual ----------
   // en las casillas de Curso, Día y Horario
   const ctxMenu = document.getElementById('ctxMenu');
   const ctxEdit = document.getElementById('ctxEdit');
   const ctxDelete = document.getElementById('ctxDelete');
   let ctxTarget = null; // { field, value }
- 
+
   function hideCtxMenu(){
     ctxMenu.classList.remove('open');
     ctxTarget = null;
@@ -766,7 +766,7 @@
       if(rect.bottom > window.innerHeight) ctxMenu.style.top = (window.innerHeight - rect.height - 8) + 'px';
     });
   }
- 
+
   bodyRows.addEventListener('contextmenu', function(e){
     const cell = e.target.closest('.combo-cell');
     if(!cell) return;
@@ -778,7 +778,7 @@
     cell.querySelector('.combo-menu').classList.remove('open'); cell.classList.remove('open');
     showCtxMenu(e.clientX, e.clientY, field, value);
   });
- 
+
   ctxEdit.addEventListener('click', ()=>{
     if(!ctxTarget) return;
     const { field, value } = ctxTarget;
@@ -798,7 +798,7 @@
       }
     }, value);
   });
- 
+
   ctxDelete.addEventListener('click', ()=>{
     if(!ctxTarget) return;
     const { field, value } = ctxTarget;
@@ -812,7 +812,7 @@
     saveToStorage();
     showToast('Opción "' + value + '" eliminada de la lista');
   });
- 
+
   document.addEventListener('click', e=>{
     if(!e.target.closest('.ctx-menu')) hideCtxMenu();
   });
@@ -822,7 +822,7 @@
     });
     document.querySelectorAll('.qa-combo.open').forEach(c=> c.classList.remove('open'));
   }
- 
+
   // ---------- Barra de desplazamiento horizontal fija para "Lista de Carnets" ----------
   // Se mantiene visible en la parte inferior de la pantalla (junto con el encabezado
   // fijo arriba) para poder mover la tabla hacia los lados sin importar cuánto se
@@ -830,14 +830,14 @@
   const stickyHscroll = document.getElementById('stickyHscroll');
   const stickyHscrollInner = document.getElementById('stickyHscrollInner');
   let syncingHscroll = false;
- 
+
   function updateStickyHscroll(){
     const dataTable = document.getElementById('dataTable');
     if(!dataTable || !tableScroll) return;
     const scrollWidth = dataTable.scrollWidth;
     const rect = tableScroll.getBoundingClientRect();
     const needsScroll = scrollWidth > tableScroll.clientWidth + 1;
- 
+
     if(!needsScroll){
       stickyHscroll.classList.remove('show');
       return;
@@ -845,7 +845,7 @@
     stickyHscrollInner.style.width = scrollWidth + 'px';
     stickyHscroll.style.left = rect.left + 'px';
     stickyHscroll.style.width = rect.width + 'px';
- 
+
     // solo mostrarla si la barra nativa de la tabla no está a la vista
     // (es decir, si la parte de abajo de la tabla ya no cabe en la pantalla)
     const nativeBarVisible = rect.bottom <= window.innerHeight && rect.bottom >= 0;
@@ -856,12 +856,12 @@
     } else {
       stickyHscroll.classList.remove('show');
     }
- 
+
     syncingHscroll = true;
     stickyHscroll.scrollLeft = tableScroll.scrollLeft;
     syncingHscroll = false;
   }
- 
+
   stickyHscroll.addEventListener('scroll', ()=>{
     if(syncingHscroll) return;
     syncingHscroll = true;
@@ -885,7 +885,7 @@
   }, true);
   window.addEventListener('resize', hideCtxMenu);
   window.addEventListener('resize', hideQaFixedMenus);
- 
+
   function saveToStorage(){
     try{
       localStorage.setItem(STORAGE_KEY, JSON.stringify(rows));
@@ -901,14 +901,14 @@
       showToast('No se pudo guardar automáticamente en este navegador. Descarga el Excel para no perder tus cambios.');
     }
   }
- 
+
   let SITUACIONES = ["ALUMNO NUEVO","ALUMNO INCORPORADO","REPOSICION DE TARJETA"].sort((a,b)=>a.localeCompare(b,'es'));
   const ESTADOS = ["FALTA CREAR","TARJETA CREADA","ENTREGADO"];
   const TURNOS = ["MAÑANA","TARDE","NOCHE"];
   const TALLERES = ["BARTENDER Y COCTELERÍA","COSMIATRIA","DECORACIÓN DE GLOBOS","DECORACIÓN DE TORTAS EN CHANTILLY Y FONDANT","DISEÑO Y ARMADO DE MELAMINA","PEINADO Y MAQUILLAJE","REPARACIÓN DE CELULARES Y TABLETS","SUBLIMACIÓN Y ESTAMPADO EN DTF Y VINIL TEXTIL","UÑAS ACRÍLICAS"].sort((a,b)=>a.localeCompare(b,'es'));
   const TIPOS_INSCRIPCION = ["CURSO","TALLER"];
   const MODALIDADES = ["PRESENCIAL","VIRTUAL"];
- 
+
   // Cursos que solo se ofrecen en UNA modalidad (agrega aquí los que correspondan).
   // Clave: nombre del curso EXACTO tal como aparece en la lista de Curso (en mayúsculas).
   // Valor: "PRESENCIAL" o "VIRTUAL". Los cursos que no aparezcan aquí permiten ambas modalidades.
@@ -927,7 +927,7 @@
   let CURSOS = Array.from(new Set(rows.map(r=>r.curso).filter(Boolean))).sort((a,b)=>a.localeCompare(b,'es'));
   const DATALISTS = { curso: ()=>CURSOS, dia: ()=>DIAS, horario: ()=>HORARIOS, taller: ()=>TALLERES };
   const ADD_NEW = "__AGREGAR_NUEVO__";
- 
+
   // ordena cada lista de opciones: alfabético para texto, numérico/cronológico para Horario
   function horarioSortKey(str){
     const m = String(str).match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
@@ -947,7 +947,7 @@
     else if(field === 'taller'){ TALLERES.sort((a,b)=> a.localeCompare(b,'es')); }
   }
   HORARIOS.sort((a,b)=> horarioSortKey(a) - horarioSortKey(b));
- 
+
   function autoGrow(ta){
     ta.style.height = 'auto';
     ta.style.height = ta.scrollHeight + 'px';
@@ -974,7 +974,7 @@
     }
     return `<select data-idx="${idx}" data-field="${field}" class="${cls(current)}" title="${escapeHtml(current||'')}">` + optionsHtml + `</select>`;
   }
- 
+
   // ---------- Búsqueda por tecleo (type-ahead) para Carnet (único campo que sigue usando el listado simple de clic) ----------
   function fieldOptionsFor(field){
     const map = { curso: CURSOS, dia: DIAS, turno: TURNOS, horario: HORARIOS, situacion: SITUACIONES, estado: ESTADOS, taller: TALLERES, tipo_inscripcion: TIPOS_INSCRIPCION, modalidad: MODALIDADES };
@@ -985,7 +985,7 @@
   let taLastTime = 0;
   let taMatches = [];
   let taMatchIndex = -1;
- 
+
   function applyComboSelection(cell, field, value){
     const idx = parseInt(cell.dataset.idx, 10);
     rows[idx][field] = value;
@@ -997,7 +997,7 @@
     }
     saveToStorage();
   }
- 
+
   document.addEventListener('keydown', function(e){
     const displayEl = e.target.closest && e.target.closest('.combo-display');
     if(!displayEl) return;
@@ -1008,22 +1008,22 @@
     const options = fieldOptionsFor(field);
     if(!options.length) return;
     e.preventDefault();
- 
+
     const now = Date.now();
     const key = e.key.toUpperCase();
     const sameCellRecent = (taLastCell === cell) && (now - taLastTime <= 900);
     taLastCell = cell;
     taLastTime = now;
- 
+
     if(sameCellRecent && taBuffer.length === 1 && taBuffer === key && taMatches.length){
       taMatchIndex = (taMatchIndex + 1) % taMatches.length;
       applyComboSelection(cell, field, taMatches[taMatchIndex]);
       return;
     }
- 
+
     if(!sameCellRecent) taBuffer = '';
     taBuffer += key;
- 
+
     let matches = options.filter(o => o.toUpperCase().startsWith(taBuffer));
     if(!matches.length){
       taBuffer = key;
@@ -1034,7 +1034,7 @@
     taMatchIndex = 0;
     applyComboSelection(cell, field, matches[0]);
   });
- 
+
   function comboHtml(options, current, idx, field, cls, editable){
     let opts = options.slice();
     if(current && !opts.includes(current)) opts = [current, ...opts];
@@ -1048,13 +1048,13 @@
       <div class="combo-menu">${optionsHtml}</div>
     </div>`;
   }
- 
+
   // ---------- Autocompletado (Curso, Día, Turno, Horario, Situación) ----------
   // escribir filtra en vivo (coincide en cualquier parte de la opción), flechas
   // ↑/↓ navegan resaltando en verde, Enter selecciona y rellena la casilla.
   const EDITABLE_FIELDS = { curso:true, dia:true, horario:true, turno:false, situacion:false, taller:true, tipo_inscripcion:false, modalidad:false };
   let qaState = { curso:'', dia:'', turno:'MAÑANA', horario:'', situacion:'ALUMNO NUEVO', taller:'', tipo_inscripcion:'CURSO', modalidad:'PRESENCIAL' };
- 
+
   function acOptionsInner(options, current, field, editable){
     let opts = options.slice();
     if(current && !opts.includes(current)) opts = [current, ...opts];
@@ -1071,7 +1071,7 @@
     }
     return html;
   }
- 
+
   function fieldColorClass(field, value){
     if(field === 'tipo_inscripcion'){
       if(value === 'CURSO') return 'ac-tipo-curso';
@@ -1094,7 +1094,7 @@
       <div class="ac-menu">${acOptionsInner(options, current, field, editable)}</div>
     </div>`;
   }
- 
+
   function renderAcQaCombo(field){
     const cell = document.getElementById('qa-' + field + '-cell');
     if(!cell) return;
@@ -1125,12 +1125,12 @@
     cell.innerHTML = `<input class="ac-input ${fieldColorClass(field, current)}" type="text" value="${escapeHtml(current)}" data-committed="${escapeHtml(current)}" title="${escapeHtml(current)}" autocomplete="off">
       <div class="ac-menu">${acOptionsInner(options, current, field, editable)}</div>`;
   }
- 
+
   function refreshOptionLists(){
     // reconstruye los campos de autocompletado del panel de alta rápida
     ['curso','dia','turno','horario','situacion','taller','tipo_inscripcion','modalidad'].forEach(renderAcQaCombo);
   }
- 
+
   // --- filtrado en vivo, resaltado y navegación con flechas ---
   function acVisibleOptions(cell){
     return [...cell.querySelectorAll('.ac-option')].filter(o => o.style.display !== 'none');
@@ -1203,7 +1203,7 @@
     }
   }
   let suppressAutoOpen = false;
- 
+
   function acSetValue(cell, field, value){
     const isQa = !!cell.id && cell.id.indexOf('qa-') === 0;
     if(isQa){
@@ -1275,7 +1275,7 @@
     }
     acSetValue(cell, field, value);
   }
- 
+
   document.addEventListener('focusin', e=>{
     const input = e.target.closest && e.target.closest('.ac-input');
     if(!input) return;
@@ -1317,7 +1317,7 @@
     const editIcon = e.target.closest && e.target.closest('.ac-option-edit');
     const delIcon = e.target.closest && e.target.closest('.ac-option-del');
     const option = e.target.closest && e.target.closest('.ac-option');
- 
+
     if(editIcon){
       e.preventDefault(); e.stopPropagation();
       const cell = editIcon.closest('.ac-cell');
@@ -1382,7 +1382,7 @@
   window.addEventListener('resize', ()=>{
     document.querySelectorAll('.ac-cell.open').forEach(c=> acCloseMenu(c));
   });
- 
+
   let filtered = rows.map((_,i)=>i);
   let currentPage = 1;
   let pageSize = 50;
@@ -1393,7 +1393,7 @@
   const pagePrevBtn = document.getElementById('pagePrevBtn');
   const pageNextBtn = document.getElementById('pageNextBtn');
   const pageLastBtn = document.getElementById('pageLastBtn');
- 
+
   function totalPages(){
     return Math.max(1, Math.ceil(filtered.length / pageSize));
   }
@@ -1411,12 +1411,12 @@
   pagePrevBtn.addEventListener('click', ()=> goToPage(currentPage - 1));
   pageNextBtn.addEventListener('click', ()=> goToPage(currentPage + 1));
   pageLastBtn.addEventListener('click', ()=> goToPage(totalPages()));
- 
+
   // Combo personalizado (Carnet): un único listener delegado, siempre activo.
   bodyRows.addEventListener('click', function(e){
     try{
       const editOpt = e.target.closest('.combo-option-edit');
- 
+
       if(editOpt){
         e.stopPropagation();
         const cell = editOpt.closest('.combo-cell');
@@ -1441,7 +1441,7 @@
         }
         return;
       }
- 
+
       const delOpt = e.target.closest('.combo-option-del');
       if(delOpt){
         e.stopPropagation();
@@ -1459,19 +1459,19 @@
         }
         return;
       }
- 
+
       const display = e.target.closest('.combo-display');
       const option = e.target.closest('.combo-option');
- 
+
       if(option){
         const cell = option.closest('.combo-cell');
         const idx = parseInt(cell.dataset.idx, 10);
         const field = cell.dataset.field;
         const value = option.dataset.value;
- 
+
         // cerrar el menú
         cell.querySelector('.combo-menu').classList.remove('open'); cell.classList.remove('open');
- 
+
         if(value === ADD_NEW && DATALISTS[field]){
           showAddOptionModal(field, (val)=>{
             if(val){
@@ -1488,7 +1488,7 @@
           });
           return;
         }
- 
+
         snapshotForUndo();
         rows[idx][field] = value;
         const displayEl = cell.querySelector('.combo-display');
@@ -1500,7 +1500,7 @@
         saveToStorage();
         return;
       }
- 
+
       if(display){
         const cell = display.closest('.combo-cell');
         const menu = cell.querySelector('.combo-menu');
@@ -1511,10 +1511,10 @@
         if(!wasOpen){ menu.classList.add('open'); cell.classList.add('open'); }
         return;
       }
- 
+
       // clic dentro del listado desplegable pero sin tocar una opción concreta: no cerrar
       if(e.target.closest('.combo-menu')) return;
- 
+
       // clic fuera de cualquier combo: cerrar todos los menús abiertos
       bodyRows.querySelectorAll('.combo-menu.open').forEach(m=> m.classList.remove('open'));
       bodyRows.querySelectorAll('.combo-cell.open').forEach(c=> c.classList.remove('open'));
@@ -1528,7 +1528,7 @@
       bodyRows.querySelectorAll('.combo-cell.open').forEach(c=> c.classList.remove('open'));
     }
   });
- 
+
   // Eliminar fila (✕): un único listener delegado sobre la tabla, siempre activo.
   // No depende de confirm()/alert() nativos (algunos navegadores embebidos los bloquean
   // y eso impedía que el borrado funcionara). Borra directo y avisa con un toast.
@@ -1549,8 +1549,8 @@
       showToast('Ocurrió un problema al eliminar. Intenta de nuevo.');
     }
   });
- 
- 
+
+
   function applyFilter(resetPage){
     if(resetPage === undefined) resetPage = true;
     const q = searchBox.value.trim().toUpperCase();
@@ -1571,7 +1571,7 @@
     if(resetPage) currentPage = 1;
     render();
   }
- 
+
   function setGroupEstado(value){
     groupEstado = (groupEstado === value) ? null : value;
     document.querySelectorAll('#groupFalta,#groupCreada,#groupEntregado').forEach(c=>c.classList.remove('active'));
@@ -1588,7 +1588,7 @@
     document.querySelectorAll('#groupFalta,#groupCreada,#groupEntregado').forEach(c=>c.classList.remove('active'));
     applyFilter();
   });
- 
+
   function setGroupTipo(value){
     groupTipo = (groupTipo === value) ? null : value;
     document.querySelectorAll('#tipoFilterCurso,#tipoFilterTaller,#tipoFilterPresencial,#tipoFilterVirtual').forEach(c=>c.classList.remove('active'));
@@ -1607,7 +1607,7 @@
     document.querySelectorAll('#tipoFilterCurso,#tipoFilterTaller,#tipoFilterPresencial,#tipoFilterVirtual').forEach(c=>c.classList.remove('active'));
     applyFilter();
   });
- 
+
   function render(){
     bodyRows.innerHTML = '';
     const frag = document.createDocumentFragment();
@@ -1651,14 +1651,14 @@
     bodyRows.classList.remove('fade-in');
     void bodyRows.offsetWidth; // forzar reflow para reiniciar la animación
     bodyRows.classList.add('fade-in');
- 
+
     // auto-ajustar la altura de cada textarea a su contenido, en dos pasadas
     // (primero todas las escrituras, luego todas las lecturas) para evitar que
     // el navegador recalcule el diseño una vez por cada celda
     const textareasToGrow = bodyRows.querySelectorAll('textarea.cell-textarea');
     textareasToGrow.forEach(ta=>{ ta.style.height = 'auto'; });
     textareasToGrow.forEach(ta=>{ ta.style.height = ta.scrollHeight + 'px'; });
- 
+
     bodyRows.querySelectorAll('input, select, textarea').forEach(el=>{
       if(el.tagName === 'TEXTAREA'){
         el.addEventListener('input', ()=> autoGrow(el));
@@ -1666,7 +1666,7 @@
       el.addEventListener('change', e=>{
         const idx = +e.target.dataset.idx;
         const field = e.target.dataset.field;
- 
+
         if(e.target.value === ADD_NEW && DATALISTS[field]){
           showAddOptionModal(field, (val)=>{
             if(val){
@@ -1682,21 +1682,21 @@
           });
           return;
         }
- 
+
         snapshotForUndo();
         rows[idx][field] = e.target.value;
- 
+
         if(field === 'estado'){
           e.target.className = estadoClass(e.target.value);
         }
- 
+
         saveToStorage();
       });
     });
- 
+
     rowCount.textContent = filtered.length;
     totalCount.textContent = rows.length;
- 
+
     // actualizar barra de paginación
     const totalFiltered = filtered.length;
     const rangeStart = totalFiltered === 0 ? 0 : startPos + 1;
@@ -1705,10 +1705,10 @@
     pageIndicator.textContent = `Página ${currentPage} de ${tp}`;
     pageFirstBtn.disabled = pagePrevBtn.disabled = (currentPage <= 1);
     pageNextBtn.disabled = pageLastBtn.disabled = (currentPage >= tp);
- 
+
     updateStickyHscroll();
   }
- 
+
   let searchDebounceTimer = null;
   function debouncedApplyFilter(){
     clearTimeout(searchDebounceTimer);
@@ -1716,7 +1716,7 @@
   }
   searchBox.addEventListener('input', debouncedApplyFilter);
   searchIdCarnet.addEventListener('input', debouncedApplyFilter);
- 
+
   document.getElementById('addRowBtn').addEventListener('click', ()=>{
     snapshotForUndo();
     rows.push({
@@ -1731,10 +1731,10 @@
     saveToStorage();
     showToast('Alumno agregado — edítalo en la tabla');
   });
- 
+
   // ---------- Alta rápida (panel superior): combo Curso/Día/Horario ----------
   const quickaddPanel = document.querySelector('.quickadd-panel');
- 
+
   quickaddPanel.addEventListener('click', function(e){
     try{
       const editOpt = e.target.closest('.combo-option-edit');
@@ -1760,7 +1760,7 @@
         }, oldValue);
         return;
       }
- 
+
       const delOpt = e.target.closest('.combo-option-del');
       if(delOpt){
         e.stopPropagation();
@@ -1776,16 +1776,16 @@
         showToast('Opción "' + value + '" eliminada de la lista');
         return;
       }
- 
+
       const display = e.target.closest('.qa-combo .combo-display');
       const option = e.target.closest('.qa-combo .combo-option');
- 
+
       if(option){
         const cell = option.closest('.qa-combo');
         const field = cell.dataset.field;
         const value = option.dataset.value;
         cell.querySelector('.combo-menu').classList.remove('open'); cell.classList.remove('open');
- 
+
         if(value === ADD_NEW){
           showAddOptionModal(field, (val)=>{
             if(val){
@@ -1799,12 +1799,12 @@
           });
           return;
         }
- 
+
         qaState[field] = value;
         renderQaCombo(field);
         return;
       }
- 
+
       if(display){
         const cell = display.closest('.qa-combo');
         const menu = cell.querySelector('.combo-menu');
@@ -1827,18 +1827,18 @@
         }
         return;
       }
- 
+
       // clic dentro del listado desplegable pero sin tocar una opción concreta
       // (por ejemplo el espacio vacío o el borde): no cerrar, dejarlo abierto
       if(e.target.closest('.combo-menu')) return;
- 
+
       quickaddPanel.querySelectorAll('.combo-menu.open').forEach(m=>{ m.classList.remove('open'); m.classList.remove('menu-fixed'); m.style.cssText=''; });
       quickaddPanel.querySelectorAll('.combo-cell.open').forEach(c=> c.classList.remove('open'));
     }catch(err){
       console.error('Error en el combo del panel de alta rápida:', err);
     }
   });
- 
+
   quickaddPanel.addEventListener('contextmenu', function(e){
     const cell = e.target.closest('.qa-combo');
     if(!cell) return;
@@ -1849,14 +1849,14 @@
     cell.querySelector('.combo-menu').classList.remove('open'); cell.classList.remove('open');
     showCtxMenu(e.clientX, e.clientY, field, value);
   });
- 
+
   document.addEventListener('click', e=>{
     if(!e.target.closest('.qa-combo')){
       quickaddPanel.querySelectorAll('.combo-menu.open').forEach(m=> m.classList.remove('open'));
       quickaddPanel.querySelectorAll('.combo-cell.open').forEach(c=> c.classList.remove('open'));
     }
   });
- 
+
   // Máscara de fecha DD/MM/AAAA: inserta "/" automáticamente mientras se escribe,
   // y limita día a 01-31 y mes a 01-12.
   function attachDateMask(input){
@@ -1865,7 +1865,7 @@
       let day = digits.slice(0, 2);
       let month = digits.slice(2, 4);
       let year = digits.slice(4, 8);
- 
+
       if(day.length === 2){
         let d = parseInt(day, 10);
         if(d === 0) day = '01';
@@ -1876,7 +1876,7 @@
         if(m === 0) month = '01';
         if(m > 12) month = '12';
       }
- 
+
       let formatted = day;
       if(digits.length > 2) formatted += '/' + month;
       if(digits.length > 4) formatted += '/' + year;
@@ -1884,7 +1884,7 @@
     });
   }
   attachDateMask(document.getElementById('qa-finicio'));
- 
+
   document.getElementById('qaAddBtn').addEventListener('click', ()=>{
     const btnQa = document.getElementById('qaAddBtn');
     if(btnQa.disabled) return; // evita doble registro por doble clic accidental
@@ -1924,7 +1924,7 @@
     };
     snapshotForUndo();
     rows.push(nuevo);
- 
+
     // registrar nuevos valores de curso/dia/horario en sus listas
     ['curso','dia','horario'].forEach(f=>{
       const val = nuevo[f];
@@ -1933,14 +1933,14 @@
         resortField(f);
       }
     });
- 
+
     // limpiar el formulario de alta rápida
     ['qa-id','qa-nombre','qa-dni','qa-fmat','qa-finicio','qa-idcarnet','qa-observacion']
       .forEach(elId => document.getElementById(elId).value = '');
     qaState = { curso: '', dia: '', turno: 'MAÑANA', horario: '', situacion: 'ALUMNO NUEVO', taller: '', tipo_inscripcion: 'CURSO', modalidad: 'PRESENCIAL' };
     refreshOptionLists();
     document.getElementById('qa-estado').value = 'FALTA CREAR';
- 
+
     searchBox.value = '';
     searchIdCarnet.value = '';
     groupEstado = null;
@@ -1952,7 +1952,7 @@
     saveToStorage();
     showToast('Carnet agregado — visible en la última página (' + currentPage + ' de ' + totalPages() + ')');
   });
- 
+
   // ---------- Upload ----------
   const fileInput = document.getElementById('fileInput');
   document.getElementById('uploadBtn').addEventListener('click', ()=>fileInput.click());
@@ -1996,7 +1996,7 @@
     };
     reader.readAsArrayBuffer(file);
   });
- 
+
   // ---------- Download ----------
   document.getElementById('downloadBtn').addEventListener('click', ()=>{
     const aoa = [["ID","NOMBRES Y APELLIDOS","DNI","FECHA DE MATRICULA","FECHA DE INICIO","ID CARNET","CURSO","DIA","TURNO","HORARIO","SITUACION","CARNET","OBSERVACION","TALLER"]];
@@ -2010,13 +2010,10 @@
     XLSX.writeFile(wb, "lista_de_carnets_con_qr.xlsx");
     showToast('Excel descargado');
   });
- 
+
   refreshOptionLists();
   render();
 })();
-</script>
-</body>
-</html>
 </script>
 </body>
 </html>
